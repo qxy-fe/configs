@@ -1,0 +1,31 @@
+{
+  "name": "@qxy/eslint-config-jest",
+  "version": "0.0.0",
+  "description": "qxy-fe eslint config for Jest",
+  "keywords": [
+    "eslint-config",
+    "qxy-fe",
+    "jest"
+  ],
+  "homepage": "https://github.com/qxy-fe/configs#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qxy-fe/configs.git",
+    "directory": "packages/eslint/jest"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    {
+      "name": "ntnyq",
+      "email": "ntnyq13@gmail.com",
+      "url": "https://ntnyq.com"
+    }
+  ]
+}

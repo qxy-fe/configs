@@ -1,0 +1,38 @@
+{
+  "name": "@qxy/eslint-config-vue",
+  "version": "0.0.0",
+  "description": "qxy-fe eslint config for Vue.js",
+  "keywords": [
+    "eslint-config",
+    "qxy-fe",
+    "vue"
+  ],
+  "homepage": "https://github.com/qxy-fe/configs#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qxy-fe/configs.git",
+    "directory": "packages/eslint/vue"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@qxy/eslint-config": "0.0.0",
+    "eslint-plugin-vue": "^7.0.1"
+  },
+  "peerDependencies": {
+    "babel-eslint": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    {
+      "name": "ntnyq",
+      "email": "ntnyq13@gmail.com",
+      "url": "https://ntnyq.com"
+    }
+  ]
+}

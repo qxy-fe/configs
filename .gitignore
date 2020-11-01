@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+
+# Logs
+*.log*
+
+# We use Yarn
+package-lock.json

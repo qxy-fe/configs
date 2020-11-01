@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.eslint.fixAll": true
+  },
+  "eslint.validate": ["javascript"],
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  }
+}
