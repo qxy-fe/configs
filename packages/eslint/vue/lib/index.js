@@ -39,7 +39,7 @@ module.exports = {
      * @see https://eslint.org/docs/rules/comma-spacing
      */
     'vue/comma-spacing': ['error', {
-      before: true,
+      before: false,
       after: true,
     }],
 
@@ -270,7 +270,7 @@ module.exports = {
      */
     'vue/script-indent': ['error', 2, {
       baseIndent: 0,
-      switchCase: 0,
+      switchCase: 1,
       ignores: [],
     }],
 
