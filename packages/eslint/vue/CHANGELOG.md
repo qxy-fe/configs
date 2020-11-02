@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.0.2...@qxy/eslint-config-vue@0.0.3) (2020-11-02)
+
+### Bug Fixes
+
+- disable alphabetical in vue ([b4c171f](https://github.com/qxy-fe/configs/commit/b4c171fdbb3079700b26ce4af5c11070eb78c2e2))
+
 ## [0.0.2](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.0.1...@qxy/eslint-config-vue@0.0.2) (2020-11-02)
 
 ### Bug Fixes
