@@ -1,0 +1,32 @@
+name: DingDing notify bot
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - master
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - docs
+      - .vscode
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send DingDing notify
+        uses: zcong1993/actions-ding@master
+        with:
+          dingToken: ${{ secrets.DING_TOKEN }}
+          body: |
+            {
+              "msgtype": "link",
+              "link": {
+                  "text": "Github 仓库更新啦，快来围观啊！！！Github 仓库更新啦，快来围观啊！！！Github 仓库更新啦，快来围观啊！！！",
+                  "title": "Github 仓库更新啦，快来围观啊！！！",
+                  "picUrl": "",
+                  "messageUrl": "https://github.com/qxy-fe/configs"
+              }
+            }
