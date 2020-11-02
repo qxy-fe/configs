@@ -87,7 +87,7 @@ module.exports = {
         'RENDER_MODIFIERS', // 'v-once', 'v-pre'
         'GLOBAL', // 'id'
       ],
-      alphabetical: true,
+      alphabetical: false,
     }],
 
     /**
