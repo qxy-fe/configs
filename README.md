@@ -4,7 +4,7 @@
 
 **WIP**
 
-[]()
+:book: [Docs](https://fe-docs.goyfe.com/utils-lib/eslint.html)
 
 ## packages
 

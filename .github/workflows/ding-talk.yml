@@ -1,4 +1,4 @@
-name: DingDing notify bot
+name: DingDing notify
 
 on:
   pull_request:
@@ -9,24 +9,53 @@ on:
     branches:
       - master
     paths-ignore:
-      - docs
       - .vscode
 
 jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Send DingDing notify
+      - name: DingDing notify only Push
         uses: zcong1993/actions-ding@master
+        if: |
+          always() &&
+          github.event_name == 'push' &&
+          github.repository == 'qxy-fe/configs'
         with:
           dingToken: ${{ secrets.DING_TOKEN }}
+          secret: ${{ secrets.DING_SECRET }}
           body: |
             {
               "msgtype": "link",
               "link": {
-                  "text": "Github 仓库更新啦，快来围观啊！！！Github 仓库更新啦，快来围观啊！！！Github 仓库更新啦，快来围观啊！！！",
-                  "title": "Github 仓库更新啦，快来围观啊！！！",
-                  "picUrl": "",
-                  "messageUrl": "https://github.com/qxy-fe/configs"
+                "title": "${{ github.repository }} - 仓库推送成功",
+                "text": "GitHub 仓库 ${{ github.repository }} 推送成功，点击卡片查看文档。",
+                "picUrl": "",
+                "messageUrl": "https://fe-docs.goyfe.com/utils-lib/eslint.html"
+              },
+              "at": {
+                "isAtAll": true
+              }
+            }
+      - name: DingDing notify only PR
+        uses: zcong1993/actions-ding@master
+        if: |
+          always() &&
+          github.event_name == 'pull_request' &&
+          github.repository == 'qxy-fe/configs'
+        with:
+          dingToken: ${{ secrets.DING_TOKEN }}
+          secret: ${{ secrets.DING_SECRET }}
+          body: |
+            {
+              "msgtype": "link",
+              "link": {
+                "titlest.title }}。",
+                "picUrl": "",
+                "mess": "${{ github.repository }} - 仓库合并成功",
+                "text": "GitHub 仓库${{ github.repository }} 成功合并 PR - ${{ github.event.pull_requeageUrl": "https://fe-docs.goyfe.com/utils-lib/eslint.html"
+              },
+              "at": {
+                "isAtAll": true
               }
             }
