@@ -6,7 +6,7 @@
 
 module.exports = {
   extends: [
-    '@ntnyq',
+    '@qxy',
     // Vue style guide
     'plugin:vue/recommended',
   ],
