@@ -23,18 +23,23 @@ jobs:
           github.repository == 'qxy-fe/configs'
         with:
           dingToken: ${{ secrets.DING_TOKEN }}
-          secret: ${{ secrets.DING_SECRET }}
           body: |
             {
-              "msgtype": "link",
-              "link": {
-                "title": "${{ github.repository }} - 仓库推送成功",
-                "text": "GitHub 仓库 ${{ github.repository }} 推送成功，点击卡片查看文档。",
-                "picUrl": "",
-                "messageUrl": "https://fe-docs.goyfe.com/utils-lib/eslint.html"
-              },
-              "at": {
-                "isAtAll": true
+              "msgtype": "actionCard",
+              "actionCard": {
+                "title": "${{ github.repository }} 仓库推送成功",
+                "text": "GitHub 仓库 ${{ github.repository }} 推送成功。",
+                "btnOrientation": "0",
+                "btns": [
+                  {
+                    "title": "查看仓库",
+                    "actionURL": "https://github.com/${{ github.repository }}"
+                  },
+                  {
+                    "title": "查看文档",
+                    "actionURL": "https://fe-docs.goyfe.com/utils-lib/eslint.html"
+                  }
+                ]
               }
             }
       - name: DingDing notify only PR
@@ -45,17 +50,22 @@ jobs:
           github.repository == 'qxy-fe/configs'
         with:
           dingToken: ${{ secrets.DING_TOKEN }}
-          secret: ${{ secrets.DING_SECRET }}
           body: |
             {
               "msgtype": "link",
               "link": {
-                "titlest.title }}。",
-                "picUrl": "",
-                "mess": "${{ github.repository }} - 仓库合并成功",
-                "text": "GitHub 仓库${{ github.repository }} 成功合并 PR - ${{ github.event.pull_requeageUrl": "https://fe-docs.goyfe.com/utils-lib/eslint.html"
-              },
-              "at": {
-                "isAtAll": true
+                "title": "${{ github.repository }} 仓库合并 PR 成功",
+                "text": "GitHub 仓库${{ github.repository }} 成功合并 PR - ${{ github.event.pull_request.title }}。"
+                "btnOrientation": "0",
+                "btns": [
+                  {
+                    "title": "查看仓库",
+                    "actionURL": "https://github.com/${{ github.repository }}"
+                  },
+                  {
+                    "title": "查看文档",
+                    "actionURL": "https://fe-docs.goyfe.com/utils-lib/eslint.html"
+                  }
+                ]
               }
             }
