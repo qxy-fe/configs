@@ -20,6 +20,13 @@ module.exports = {
   // Rules overrides
   rules: {
     /**
+     * Disallow use of v-html to prevent XSS attack
+     *
+     * @see https://eslint.vuejs.org/rules/no-v-html.html
+     */
+    'vue/no-v-html': 'off',
+
+    /**
      * Disallow usage of this in template
      *
      * @see https://eslint.vuejs.org/rules/this-in-template.html

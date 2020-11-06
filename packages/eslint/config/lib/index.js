@@ -65,9 +65,9 @@ module.exports = {
      * @see https://eslint.org/docs/rules/max-len
      */
     'max-len': ['error', {
-      code: 120,
+      code: 200,
       tabWidth: 2,
-      comments: 80,
+      comments: 120,
       ignoreUrls: true,
       ignoreStrings: true,
       ignoreRegExpLiterals: true,
@@ -88,7 +88,7 @@ module.exports = {
      * @see https://eslint.org/docs/rules/max-lines-per-function
      */
     'max-lines-per-function': ['error', {
-      max: 50,
+      max: 100,
       skipBlankLines: true,
       skipComments: true,
     }],
