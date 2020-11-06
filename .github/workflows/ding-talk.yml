@@ -25,21 +25,10 @@ jobs:
           dingToken: ${{ secrets.DING_TOKEN }}
           body: |
             {
-              "msgtype": "actionCard",
-              "actionCard": {
+              "msgtype": "markdown",
+              "markdown": {
                 "title": "${{ github.repository }} 仓库推送成功",
-                "text": "![Random Picture](https://picsum.photos/400/200) \n GitHub 仓库 ${{ github.repository }} 推送成功。",
-                "btnOrientation": "1",
-                "btns": [
-                  {
-                    "title": "查看仓库",
-                    "actionURL": "https://github.com/${{ github.repository }}"
-                  },
-                  {
-                    "title": "查看文档",
-                    "actionURL": "https://fe-docs.goyfe.com/utils-lib/eslint.html"
-                  }
-                ]
+                "text": "![Random Picture](https://picsum.photos/400/200) \n GitHub 仓库 ${{ github.repository }} 推送成功。\n - [查看文档](https://qxy-fe.github.io/fe-docs/utils-lib/eslint.html) \n - [查看仓库](https://github.com/${{ github.repository }})"
               }
             }
       - name: DingDing notify only PR
@@ -52,20 +41,9 @@ jobs:
           dingToken: ${{ secrets.DING_TOKEN }}
           body: |
             {
-              "msgtype": "link",
-              "link": {
+              "msgtype": "markdown",
+              "markdown": {
                 "title": "${{ github.repository }} 仓库合并 PR 成功",
-                "text": "![Random Picture](https://picsum.photos/400/200) \n GitHub 仓库${{ github.repository }} 成功合并 PR - ${{ github.event.pull_request.title }}。"
-                "btnOrientation": "1",
-                "btns": [
-                  {
-                    "title": "查看仓库",
-                    "actionURL": "https://github.com/${{ github.repository }}"
-                  },
-                  {
-                    "title": "查看文档",
-                    "actionURL": "https://fe-docs.goyfe.com/utils-lib/eslint.html"
-                  }
-                ]
+                "text": "![Random Picture](https://picsum.photos/400/200) \n GitHub 仓库 ${{ github.repository }} 成功合并 PR - ${{ github.event.pull_request.title }}。 \n - [查看文档](https://qxy-fe.github.io/fe-docs/utils-lib/eslint.html) \n - [查看仓库](https://github.com/${{ github.repository }})"
               }
             }
