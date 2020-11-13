@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.1.0...@qxy/eslint-config-vue@0.1.1) (2020-11-13)
+
+### Bug Fixes
+
+- vue-multiline-attr ([e3513c5](https://github.com/qxy-fe/configs/commit/e3513c5617433eeef3c436b481c740f0683a805c))
+
 # [0.1.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.0.4...@qxy/eslint-config-vue@0.1.0) (2020-11-06)
 
 ### Features
