@@ -7,8 +7,6 @@
   ],
   "scripts": {
     "bootstrap": "yarn || npm i",
-    "build:docs": "vuepress build docs",
-    "dev:docs": "vuepress dev docs",
     "lint": "eslint packages",
     "release": "npm run lint && lerna publish"
   },
@@ -38,14 +36,13 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@commitlint/config-lerna-scopes": "^11.0.0",
-    "@ntnyq/eslint-config": "^0.0.2",
-    "@ntnyq/prettier-config": "^0.1.0",
-    "eslint": "^7.12.1",
+    "@ntnyq/eslint-config": "^0.2.0",
+    "@ntnyq/prettier-config": "^0.2.0",
+    "eslint": "^7.14.0",
     "husky": "^4.3.0",
     "lerna": "^3.22.1",
-    "lint-staged": "^10.5.1",
-    "prettier": "^2.1.2",
-    "sort-package-json": "^1.46.1",
-    "vuepress": "^1.7.1"
+    "lint-staged": "^10.5.2",
+    "prettier": "^2.2.0",
+    "sort-package-json": "^1.48.0"
   }
 }
