@@ -27,7 +27,7 @@ module.exports = {
   jsxSingleQuote: true,
 
   // Print trailing commas wherever possible when multi-line
-  trailingComma: 'es5',
+  trailingComma: 'all',
 
   // Print spaces between brackets in object literals.
   bracketSpacing: true,
@@ -68,4 +68,25 @@ module.exports = {
 
   // Control whether Prettier formats quoted code embedded in the file
   embeddedLanguageFormatting: 'auto',
+
+  // Overrides for specific language
+  overrides: [
+    {
+      files: '*.scss',
+
+      options: {
+        // Double quotes for CSS and its processor
+        singleQuote: false,
+      },
+    },
+
+    {
+      files: '*.md',
+
+      options: {
+        // Enlarge the indent
+        tabWidth: 4,
+      },
+    },
+  ],
 }
