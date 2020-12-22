@@ -72,7 +72,7 @@ module.exports = {
   // Overrides for specific language
   overrides: [
     {
-      files: '*.scss',
+      files: '*.{css,scss,less}',
 
       options: {
         // Double quotes for CSS and its processor

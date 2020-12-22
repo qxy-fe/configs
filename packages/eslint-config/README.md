@@ -18,13 +18,13 @@ in `.eslintrc.js`
 
 ```js
 module.exports = {
-  root: true,
+    root: true,
 
-  extends: ['@qxy'],
+    extends: ['@qxy'],
 
-  rules: {
-    // Override rules
-  },
+    rules: {
+        // Override rules
+    },
 }
 ```
 
@@ -32,9 +32,9 @@ in `package.json`
 
 ```json
 {
-  "eslintConfig": {
-    "root": true,
-    "extends": "@qxy"
-  }
+    "eslintConfig": {
+        "root": true,
+        "extends": "@qxy"
+    }
 }
 ```

@@ -11,7 +11,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/qxy-fe/configs.git",
-    "directory": "packages/eslint/vue"
+    "directory": "packages/eslint-config-vue"
   },
   "license": "MIT",
   "main": "lib/index.js",
@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "@qxy/eslint-config": "0.2.0",
-    "eslint-plugin-vue": "^7.2.0"
+    "eslint-plugin-vue": "^7.3.0"
   },
   "peerDependencies": {
     "babel-eslint": "*"
