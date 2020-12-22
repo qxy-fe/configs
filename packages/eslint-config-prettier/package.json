@@ -1,23 +1,31 @@
 {
-  "name": "@qxy/prettier-config",
-  "version": "0.1.0",
-  "description": "qxy-fe prettier config",
+  "name": "@qxy/eslint-config-prettier",
+  "version": "0.0.1",
+  "description": "qxy-fe eslint config with prettier",
   "keywords": [
-    "prettier-config",
-    "qxy-fe"
+    "eslint-config",
+    "qxy-fe",
+    "prettier"
   ],
   "homepage": "https://github.com/qxy-fe/configs#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/qxy-fe/configs.git",
-    "directory": "packages/prettier-config"
+    "directory": "packages/eslint-config-prettier"
   },
   "license": "MIT",
   "main": "lib/index.js",
   "files": [
     "lib"
   ],
-  "devDependencies": {},
+  "dependencies": {
+    "@qxy/eslint-config": "0.2.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0"
+  },
+  "peerDependencies": {
+    "prettier": "^2.2.0"
+  },
   "publishConfig": {
     "access": "public"
   },
