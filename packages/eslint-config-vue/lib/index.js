@@ -325,5 +325,14 @@ module.exports = {
     'vue/v-on-function-call': ['error', 'never', {
       ignoreIncludesComment: true,
     }],
+
+    /**
+     * Enforce new lines between multi-line properties in Vue components
+     *
+     * @see https://eslint.vuejs.org/rules/new-line-between-multi-line-property.html
+     */
+    'vue/new-line-between-multi-line-property': ['error', {
+      minLineOfMultilineProperty: 2,
+    }],
   },
 }
