@@ -1,6 +1,6 @@
 {
   "name": "@qxy/eslint-config-prettier",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "qxy-fe eslint config with prettier",
   "keywords": [
     "eslint-config",
@@ -19,7 +19,7 @@
     "lib"
   ],
   "dependencies": {
-    "@qxy/eslint-config": "0.2.0",
+    "@qxy/eslint-config": "0.2.1",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.3.0"
   },

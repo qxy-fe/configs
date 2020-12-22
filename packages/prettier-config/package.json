@@ -1,6 +1,6 @@
 {
   "name": "@qxy/prettier-config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "qxy-fe prettier config",
   "keywords": [
     "prettier-config",
@@ -17,7 +17,6 @@
   "files": [
     "lib"
   ],
-  "devDependencies": {},
   "publishConfig": {
     "access": "public"
   },
