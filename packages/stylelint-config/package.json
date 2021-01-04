@@ -1,0 +1,34 @@
+{
+  "name": "@qxy/stylelint-config",
+  "version": "0.0.1",
+  "description": "qxy-fe stylelint config",
+  "keywords": [
+    "stylelint-config",
+    "qxy-fe"
+  ],
+  "homepage": "https://github.com/qxy-fe/configs#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qxy-fe/configs.git",
+    "directory": "packages/stylelint-config"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    {
+      "name": "ntnyq",
+      "email": "ntnyq13@gmail.com",
+      "url": "https://ntnyq.com"
+    }
+  ]
+}

@@ -8,5 +8,13 @@
   "[javascript]": {
     "editor.formatOnSave": false
   },
-  "cSpell.words": ["uncategorized", "noopener", "noreferrer", "Cyclomatic"]
+  "cSpell.words": [
+    "Cyclomatic",
+    "noopener",
+    "noreferrer",
+    "stylelintrc",
+    "uncategorized",
+    "unspaced",
+    "zcong"
+  ]
 }
