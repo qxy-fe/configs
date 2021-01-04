@@ -1,7 +1,7 @@
 /**
- * Based on Standard CSS Style
+ * Based on stylelint standard style with SCSS support
  *
- * @see https://github.com/standard/eslint-config-standard
+ * @see https://github.com/stylelint/stylelint-config-standard
  */
 
 module.exports = {
@@ -10,6 +10,9 @@ module.exports = {
   ],
 
   plugins: [
+    /**
+     * @see https://github.com/kristerkari/stylelint-scss
+     */
     'stylelint-scss',
   ],
 
@@ -54,7 +57,7 @@ module.exports = {
     'selector-pseudo-element-colon-notation': 'single',
 
     // Specify a pattern for class selectors
-    'selector-class-pattern': '^([a-z][a-z0-9]*)(_[a-z0-9]+)*$',
+    'selector-class-pattern': '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
 
     // Specify a pattern for id selectors
     'selector-id-pattern': '^([a-z][a-z0-9]*)(_[a-z0-9]+)*$',
