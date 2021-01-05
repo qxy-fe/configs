@@ -75,9 +75,6 @@ module.exports = {
       ignoreAtRules: ['import', 'else'],
     }],
 
-    // Disallow whitespace before the colon in $-variable declarations
-    'dollar-variable-colon-space-before': 'never',
-
     // =============================== //
     // SCSS Rules //
     // =============================== //
@@ -87,6 +84,9 @@ module.exports = {
 
     // Requires a whitespace before the colon in $-variable declarations
     'scss/dollar-variable-colon-space-after': 'always',
+
+    // Disallow whitespace before the colon in $-variable declarations
+    'scss/dollar-variable-colon-space-before': 'never',
 
     // Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers
     'scss/dollar-variable-no-missing-interpolation': true,
