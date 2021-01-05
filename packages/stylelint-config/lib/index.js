@@ -32,7 +32,7 @@ module.exports = {
 
     // Specify lowercase or uppercase for keywords values
     'value-keyword-case': ['lower', {
-      ignoreProperties: ['/^($?)font/'],
+      ignoreProperties: [/^\$?font/],
     }],
 
     // Disallow selectors of lower specificity from coming after overriding selectors of higher specificity
