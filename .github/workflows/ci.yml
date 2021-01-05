@@ -1,4 +1,4 @@
-name: DingDing notify
+name: CI
 
 on:
   pull_request:
@@ -12,8 +12,18 @@ on:
       - .vscode
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+      - run: yarn install --frozen-lockfile --non-interactive
+      - run: yarn test
+
   notify:
     runs-on: ubuntu-latest
+    needs:
+      - test
     steps:
       - name: DingDing notify only Push
         uses: zcong1993/actions-ding@master
