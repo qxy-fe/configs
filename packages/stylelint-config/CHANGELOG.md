@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/qxy-fe/configs/compare/@qxy/stylelint-config@0.1.1...@qxy/stylelint-config@0.1.2) (2021-01-05)
+
+### Bug Fixes
+
+-   **stylelint-config:** invalid regexp ([39a50b5](https://github.com/qxy-fe/configs/commit/39a50b52f81559b60707b52bd12b6bb021969b1e))
+
 ## [0.1.1](https://github.com/qxy-fe/configs/compare/@qxy/stylelint-config@0.1.0...@qxy/stylelint-config@0.1.1) (2021-01-04)
 
 ### Bug Fixes
