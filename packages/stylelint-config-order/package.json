@@ -1,6 +1,6 @@
 {
   "name": "@qxy/stylelint-config-order",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "qxy-fe stylelint config with order",
   "keywords": [
     "stylelint-config",
