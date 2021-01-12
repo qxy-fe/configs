@@ -1,4 +1,4 @@
-# stylelint config order
+# stylelint-config-order
 
 > qxy-fe stylelint config with order
 
@@ -18,10 +18,10 @@ in `.stylelintrc.yml`
 
 ```yml
 extends:
-  - @qxy/stylelint-config-order
+    - '@qxy/stylelint-config-order'
 
 rules:
-  # Override rules
+    # Override rules
 ```
 
 in `package.json`

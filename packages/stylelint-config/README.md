@@ -1,4 +1,4 @@
-# stylelint config
+# stylelint-config
 
 > qxy-fe stylelint config
 
@@ -18,10 +18,10 @@ in `.stylelintrc.yml`
 
 ```yml
 extends:
-  - @qxy/stylelint-config
+    - '@qxy/stylelint-config'
 
 rules:
-  # Override rules
+    # Override rules
 ```
 
 in `package.json`

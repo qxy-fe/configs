@@ -1,4 +1,4 @@
-# prettier config
+# prettier-config
 
 > qxy-fe prettier config
 

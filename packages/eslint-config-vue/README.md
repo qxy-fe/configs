@@ -1,6 +1,6 @@
-# eslint config for Vue.js
+# eslint-config-vue
 
-> qxy-fe eslint config for Vue.js
+> qxy-fe eslint config for VueJs
 
 ## Usage
 

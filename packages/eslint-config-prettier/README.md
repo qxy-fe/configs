@@ -1,4 +1,4 @@
-# eslint-config
+# eslint-config-prettier
 
 > qxy-fe eslint config with prettier
 

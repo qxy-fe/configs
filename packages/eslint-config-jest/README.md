@@ -1,4 +1,4 @@
-# eslint config for Jest
+# eslint-config-jest
 
 > qxy-fe eslint config for Jest
 

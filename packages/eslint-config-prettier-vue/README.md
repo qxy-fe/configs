@@ -1,6 +1,6 @@
-# eslint-config
+# eslint-config-prettier-vue
 
-> qxy-fe eslint config with prettier for Vue.js
+> qxy-fe eslint config with prettier for VueJs
 
 ## Usage
 
