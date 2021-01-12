@@ -1,0 +1,12 @@
+div {
+  position: relative;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  grid-gap: 16px;
+  order: 1;
+  width: 320px;
+  font-size: 1.5rem;
+  pointer-events: all;
+  background-color: slategray;
+  transition: opacity 300ms ease;
+}
