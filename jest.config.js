@@ -9,10 +9,11 @@ module.exports = {
 
   verbose: true,
 
-  testMatch: ['**/__tests__/**/*.(spec|test).[jt]s?(x)'],
+  testMatch: [
+    '<rootDir>/packages/**/__tests__/**/*.(spec|test).[jt]s?(x)',
+  ],
 
   coveragePathIgnorePatterns: [
     '/node_modules/',
-    '/__tests__/',
   ],
 }
