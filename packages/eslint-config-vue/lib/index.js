@@ -334,5 +334,19 @@ module.exports = {
     'vue/new-line-between-multi-line-property': ['error', {
       minLineOfMultilineProperty: 2,
     }],
+
+    /**
+     * Disallow constant expressions in conditions
+     *
+     * @see https://eslint.vuejs.org/rules/no-constant-condition.html
+     */
+    'vue/no-constant-condition': ['error'],
+
+    /**
+     * Enforce Promise or callback style in `nextTick`
+     *
+     * @see https://eslint.vuejs.org/rules/next-tick-style.html
+     */
+    'vue/next-tick-style': ['error', 'promise'],
   },
 }
