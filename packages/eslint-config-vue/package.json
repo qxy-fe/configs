@@ -1,6 +1,6 @@
 {
   "name": "@qxy/eslint-config-vue",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "qxy-fe eslint config for Vue.js",
   "keywords": [
     "eslint-config",

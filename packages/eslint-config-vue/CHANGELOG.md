@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.3.0...@qxy/eslint-config-vue@0.4.0) (2021-01-25)
+
+### Features
+
+-   **eslint-config-vue:** add new rule ([7b508be](https://github.com/qxy-fe/configs/commit/7b508bebf249ca3c48ae9f371e7ed75e19d3cae6))
+
 # [0.3.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.2.0...@qxy/eslint-config-vue@0.3.0) (2020-12-22)
 
 ### Features
