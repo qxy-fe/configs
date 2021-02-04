@@ -7,9 +7,9 @@
 ### Install
 
 ```bash
-$ npm i @qxy/eslint-config-vue babel-eslint -D
+$ npm i @qxy/eslint-config-vue @babel/core @babel/eslint-parser -D
 # OR
-$ yarn add @qxy/eslint-config-vue babel-eslint -D
+$ yarn add @qxy/eslint-config-vue @babel/core @babel/eslint-parser -D
 ```
 
 ### Extend this config

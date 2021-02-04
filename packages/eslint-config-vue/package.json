@@ -23,7 +23,8 @@
     "eslint-plugin-vue": "^7.5.0"
   },
   "peerDependencies": {
-    "babel-eslint": "*"
+    "@babel/core": "^7.12.10",
+    "@babel/eslint-parser": "^7.12.1"
   },
   "publishConfig": {
     "access": "public"

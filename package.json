@@ -27,9 +27,9 @@
     "*.{json,md}": "prettier --write",
     "package.json": "sort-package-json"
   },
-  "prettier": "@ntnyq/prettier-config",
+  "prettier": "@qxy/prettier-config",
   "eslintConfig": {
-    "extends": "@ntnyq",
+    "extends": "@qxy",
     "overrides": [
       {
         "files": "**/__tests__/**/*.spec.js",
@@ -44,10 +44,8 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@commitlint/config-lerna-scopes": "^11.0.0",
-    "@ntnyq/eslint-config": "^0.3.0",
-    "@ntnyq/prettier-config": "^0.2.0",
     "@types/jest": "^26.0.20",
-    "eslint": "^7.18.0",
+    "eslint": "^7.19.0",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
     "lerna": "^3.22.1",
@@ -55,5 +53,9 @@
     "prettier": "^2.2.1",
     "sort-package-json": "^1.48.1",
     "stylelint": "^13.9.0"
+  },
+  "dependencies": {
+    "@qxy/eslint-config": "^0.2.1",
+    "@qxy/prettier-config": "^0.2.0"
   }
 }

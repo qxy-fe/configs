@@ -14,7 +14,7 @@ module.exports = {
   plugins: ['vue'],
 
   parserOptions: {
-    parser: require.resolve('babel-eslint'),
+    parser: require.resolve('@babel/eslint-parser'),
   },
 
   // Rules overrides
