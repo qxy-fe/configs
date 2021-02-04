@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.4.0...@qxy/eslint-config-vue@0.5.0) (2021-02-04)
+
+
+### Features
+
+* migrate to @babel/eslint-parser ([15f3954](https://github.com/qxy-fe/configs/commit/15f3954605cd5d863e3e8516e4132fd07639f11a))
+
+
+
+
+
 # [0.4.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.3.0...@qxy/eslint-config-vue@0.4.0) (2021-01-25)
 
 ### Features
