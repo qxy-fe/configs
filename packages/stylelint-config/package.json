@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "stylelint-config-standard": "^20.0.0",
-    "stylelint-scss": "^3.18.0"
+    "stylelint-scss": "^3.19.0"
   },
   "publishConfig": {
     "access": "public"
