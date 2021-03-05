@@ -3,16 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [0.3.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config@0.2.1...@qxy/eslint-config@0.3.0) (2021-02-04)
+## [0.3.1](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config@0.3.0...@qxy/eslint-config@0.3.1) (2021-03-05)
 
+**Note:** Version bump only for package @qxy/eslint-config
+
+# [0.3.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config@0.2.1...@qxy/eslint-config@0.3.0) (2021-02-04)
 
 ### Features
 
-* tweak maximum comments per line ([a8c0f8a](https://github.com/qxy-fe/configs/commit/a8c0f8a6f31e78fe204d89eafcc62a04eda2d9bf))
-
-
-
-
+-   tweak maximum comments per line ([a8c0f8a](https://github.com/qxy-fe/configs/commit/a8c0f8a6f31e78fe204d89eafcc62a04eda2d9bf))
 
 ## [0.2.1](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config@0.2.0...@qxy/eslint-config@0.2.1) (2020-12-22)
 
