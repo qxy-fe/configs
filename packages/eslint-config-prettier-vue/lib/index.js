@@ -7,7 +7,5 @@ module.exports = {
     '@qxy/vue',
     // Extends preset about prettier
     '@qxy/prettier/lib/prettier',
-    'prettier/standard',
-    'prettier/vue',
   ],
 }

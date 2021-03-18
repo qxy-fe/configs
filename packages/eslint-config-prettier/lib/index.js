@@ -7,6 +7,5 @@ module.exports = {
     '@qxy',
     // Extends preset about prettier
     require.resolve('./prettier'),
-    'prettier/standard',
   ],
 }
