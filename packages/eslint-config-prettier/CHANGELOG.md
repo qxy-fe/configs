@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-prettier@0.1.3...@qxy/eslint-config-prettier@0.2.0) (2021-03-18)
+
+### Features
+
+-   bump eslint-config-prettier ([a9f4c69](https://github.com/qxy-fe/configs/commit/a9f4c69a2584ead637e67207f4fb028384dce948))
+
 ## [0.1.3](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-prettier@0.1.2...@qxy/eslint-config-prettier@0.1.3) (2021-03-05)
 
 **Note:** Version bump only for package @qxy/eslint-config-prettier

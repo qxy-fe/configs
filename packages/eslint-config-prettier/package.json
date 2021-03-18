@@ -1,6 +1,6 @@
 {
   "name": "@qxy/eslint-config-prettier",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "qxy-fe eslint config with prettier",
   "keywords": [
     "eslint-config",
