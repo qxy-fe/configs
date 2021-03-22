@@ -53,6 +53,11 @@ const flex = [
   'order',
 ]
 
+// TODO: add grid rules
+const grid = [
+
+]
+
 const column = [
   'columns',
   'column-count',
@@ -238,12 +243,26 @@ module.exports = {
   ],
 
   rules: {
-    // 'order/order': [],
+    'order/order': [
+      [
+        'custom-properties',
+        'dollar-variables',
+        'at-variables',
+        'declarations',
+        'at-rules',
+        'less-mixins',
+        'rules',
+      ],
+      {
+        unspecified: 'bottom',
+      },
+    ],
 
     'order/properties-order': [
       ['content']
         .concat(positioning)
         .concat(flex)
+        .concat(grid)
         .concat(column)
         .concat(displayAndBoxModel)
         .concat(font)

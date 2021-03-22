@@ -1,12 +1,18 @@
-div {
+.box {
   position: relative;
-  box-sizing: border-box;
+  top: 10px;
+  left: 5px;
   flex: 1 1 auto;
-  grid-gap: 16px;
   order: 1;
   width: 320px;
-  font-size: 1.5rem;
-  pointer-events: all;
   background-color: slategray;
+  box-sizing: border-box;
+  font-size: 1.5rem;
   transition: opacity 300ms ease;
+  pointer-events: all;
+  grid-gap: 16px;
+}
+
+.box:before {
+  content: "";
 }
