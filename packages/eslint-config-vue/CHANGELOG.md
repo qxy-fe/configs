@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.2](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.1...@qxy/eslint-config-vue@0.5.2) (2021-04-12)
+
+
+### Bug Fixes
+
+* disable require config file ([abbea7d](https://github.com/qxy-fe/configs/commit/abbea7d5f750696f122be4a5e81a0b7ee23661e5))
+
+
+
+
+
 ## [0.5.1](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.0...@qxy/eslint-config-vue@0.5.1) (2021-03-05)
 
 **Note:** Version bump only for package @qxy/eslint-config-vue
