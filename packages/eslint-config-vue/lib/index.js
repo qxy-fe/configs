@@ -15,6 +15,7 @@ module.exports = {
 
   parserOptions: {
     parser: require.resolve('@babel/eslint-parser'),
+    requireConfigFile: false,
   },
 
   // Rules overrides
