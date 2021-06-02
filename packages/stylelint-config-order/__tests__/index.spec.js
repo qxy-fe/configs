@@ -78,6 +78,5 @@ describe(`Invalid scss`, () => {
 
   it(`Correct rule order`, () => {
     expect(result.results[0].warnings[0].rule).toBe(`order/order`)
-    expect(result.results[0].warnings[1].rule).toBe(`order/order`)
   })
 })
