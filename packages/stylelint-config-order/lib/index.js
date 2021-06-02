@@ -122,13 +122,6 @@ const displayAndBoxModel = []
     'outline-offset',
   ])
   .concat([
-    'box-shadow',
-    'opacity',
-    'filter',
-    'clear',
-    'overflow',
-    'overflow-x',
-    'overflow-y',
     'box-sizing',
   ])
 
@@ -176,6 +169,16 @@ const font = [
   'font-emphasize-style',
   'font-smooth',
   'color',
+]
+
+const effect = [
+  'box-shadow',
+  'opacity',
+  'filter',
+  'clear',
+  'overflow',
+  'overflow-x',
+  'overflow-y',
 ]
 
 const transformAndAnimation = [
@@ -249,7 +252,7 @@ module.exports = {
         'dollar-variables',
         'at-variables',
         'declarations',
-        'at-rules',
+        // 'at-rules',
         'less-mixins',
         'rules',
       ],
@@ -266,6 +269,7 @@ module.exports = {
         .concat(column)
         .concat(displayAndBoxModel)
         .concat(font)
+        .concat(effect)
         .concat(table)
         .concat(transformAndAnimation)
         .concat(visual)
