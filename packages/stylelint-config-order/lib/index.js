@@ -240,6 +240,57 @@ const svg = [
   'stroke',
 ]
 
+const atRules = [
+  {
+    type: 'at-rule',
+    name: 'include',
+    parameter: 'bg-style',
+  },
+  {
+    type: 'at-rule',
+    name: 'include',
+    parameter: 'bg',
+  },
+  {
+    type: 'at-rule',
+    name: 'include',
+    parameter: 'clearfix',
+  },
+  {
+    type: 'at-rule',
+    name: 'include',
+    parameter: 'trs',
+  },
+  {
+    type: 'at-rule',
+    name: 'include',
+    parameter: 'ellipsis',
+  },
+  {
+    type: 'at-rule',
+    name: 'include',
+    parameter: 'ellipsis-y',
+  },
+  {
+    type: 'at-rule',
+    name: 'include',
+    parameter: 'hover-active',
+    hasBlock: true,
+  },
+  {
+    type: 'at-rule',
+    name: 'include',
+    parameter: 'when',
+    hasBlock: true,
+  },
+  {
+    type: 'at-rule',
+    name: 'include',
+    parameter: 'has',
+    hasBlock: true,
+  },
+]
+
 module.exports = {
   plugins: [
     'stylelint-order',
@@ -253,11 +304,12 @@ module.exports = {
         'at-variables',
         'declarations',
         // 'at-rules',
+        ...atRules,
         'less-mixins',
         'rules',
       ],
       {
-        unspecified: 'bottom',
+        unspecified: 'ignore',
       },
     ],
 
