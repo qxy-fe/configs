@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "@qxy/eslint-config": "0.3.5",
-    "eslint-plugin-vue": "^7.10.0"
+    "eslint-plugin-vue": "^7.11.1"
   },
   "peerDependencies": {
     "@babel/core": "^7.12.10",
