@@ -6,6 +6,9 @@
     "eslint-config",
     "qxy-fe"
   ],
+  "scripts": {
+    "test": "jest"
+  },
   "homepage": "https://github.com/qxy-fe/configs#readme",
   "repository": {
     "type": "git",
