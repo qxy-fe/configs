@@ -19,7 +19,7 @@
     "lib"
   ],
   "dependencies": {
-    "eslint-plugin-jest": "^24.3.6"
+    "eslint-plugin-jest": "^24.4.0"
   },
   "publishConfig": {
     "access": "public"
