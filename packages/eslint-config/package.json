@@ -1,14 +1,11 @@
 {
   "name": "@qxy/eslint-config",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "qxy-fe eslint config",
   "keywords": [
     "eslint-config",
     "qxy-fe"
   ],
-  "scripts": {
-    "test": "jest"
-  },
   "homepage": "https://github.com/qxy-fe/configs#readme",
   "repository": {
     "type": "git",
@@ -20,6 +17,9 @@
   "files": [
     "lib"
   ],
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.23.4",

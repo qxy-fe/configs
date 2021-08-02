@@ -3,56 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.5.7](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.6...@qxy/eslint-config-vue@0.5.7) (2021-06-17)
+## [0.5.8](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.7...@qxy/eslint-config-vue@0.5.8) (2021-08-02)
 
 **Note:** Version bump only for package @qxy/eslint-config-vue
 
+## [0.5.7](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.6...@qxy/eslint-config-vue@0.5.7) (2021-06-17)
 
-
-
+**Note:** Version bump only for package @qxy/eslint-config-vue
 
 ## [0.5.6](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.5...@qxy/eslint-config-vue@0.5.6) (2021-06-02)
 
 **Note:** Version bump only for package @qxy/eslint-config-vue
 
-
-
-
-
 ## [0.5.5](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.4...@qxy/eslint-config-vue@0.5.5) (2021-05-24)
 
 **Note:** Version bump only for package @qxy/eslint-config-vue
-
-
-
-
 
 ## [0.5.4](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.3...@qxy/eslint-config-vue@0.5.4) (2021-05-19)
 
 **Note:** Version bump only for package @qxy/eslint-config-vue
 
-
-
-
-
 ## [0.5.3](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.2...@qxy/eslint-config-vue@0.5.3) (2021-04-23)
 
 **Note:** Version bump only for package @qxy/eslint-config-vue
 
-
-
-
-
 ## [0.5.2](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.1...@qxy/eslint-config-vue@0.5.2) (2021-04-12)
-
 
 ### Bug Fixes
 
-* disable require config file ([abbea7d](https://github.com/qxy-fe/configs/commit/abbea7d5f750696f122be4a5e81a0b7ee23661e5))
-
-
-
-
+-   disable require config file ([abbea7d](https://github.com/qxy-fe/configs/commit/abbea7d5f750696f122be4a5e81a0b7ee23661e5))
 
 ## [0.5.1](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.0...@qxy/eslint-config-vue@0.5.1) (2021-03-05)
 
