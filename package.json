@@ -39,15 +39,15 @@
     "@qxy/prettier-config": "^0.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
-    "@commitlint/config-lerna-scopes": "^12.1.4",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/config-lerna-scopes": "^13.1.0",
     "@types/jest": "^26.0.24",
-    "eslint": "^7.31.0",
+    "eslint": "^7.32.0",
     "husky": "^7.0.1",
     "jest": "^27.0.6",
     "lerna": "^4.0.0",
-    "lint-staged": "^11.0.1",
+    "lint-staged": "^11.1.1",
     "prettier": "^2.3.2",
     "sort-package-json": "^1.50.0",
     "stylelint": "^13.13.1"
