@@ -1,6 +1,6 @@
 {
   "name": "@qxy/eslint-config-vue",
-  "version": "0.5.9",
+  "version": "0.5.10",
   "description": "qxy-fe eslint config for Vue.js",
   "keywords": [
     "eslint-config",
@@ -19,7 +19,7 @@
     "lib"
   ],
   "dependencies": {
-    "@qxy/eslint-config": "0.3.7",
+    "@qxy/eslint-config": "0.3.8",
     "eslint-plugin-vue": "^7.16.0"
   },
   "peerDependencies": {
