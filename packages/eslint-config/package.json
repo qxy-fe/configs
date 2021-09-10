@@ -1,6 +1,6 @@
 {
   "name": "@qxy/eslint-config",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "qxy-fe eslint config",
   "keywords": [
     "eslint-config",
