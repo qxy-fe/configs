@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config@0.3.9...@qxy/eslint-config@0.4.0) (2021-09-15)
+
+
+### Features
+
+* add import/newline-after-import ([7136c17](https://github.com/qxy-fe/configs/commit/7136c17daaab0e20d1e11ba857a33ebc3399c6a8))
+
+
+
+
+
 ## [0.3.9](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config@0.3.8...@qxy/eslint-config@0.3.9) (2021-09-10)
 
 **Note:** Version bump only for package @qxy/eslint-config
