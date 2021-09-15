@@ -106,5 +106,12 @@ module.exports = {
      * @see https://eslint.org/docs/rules/max-depth
      */
     'max-depth': ['error', { max: 5 }],
+
+    /**
+     * Enforces having one empty lines after the last top-level import statement or require call
+     *
+     * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/newline-after-import.md
+     */
+    'import/newline-after-import': ['error'],
   },
 }
