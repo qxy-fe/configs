@@ -75,6 +75,12 @@ module.exports = {
       ignoreAtRules: ['import', 'else'],
     }],
 
+    // Specify percentage or number notation for alpha-values
+    'alpha-value-notation': 'number',
+
+    // Specify modern or legacy notation for applicable color-functions
+    'color-function-notation': 'legacy',
+
     // =============================== //
     // SCSS Rules //
     // =============================== //
