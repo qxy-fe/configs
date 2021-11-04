@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/qxy-fe/configs/compare/@qxy/stylelint-config@0.3.0...@qxy/stylelint-config@0.4.0) (2021-11-04)
+
+
+### Features
+
+* add rules ([cafadcb](https://github.com/qxy-fe/configs/commit/cafadcb2f29a0f77f0955e6e71ff73a256fa7c68))
+
+
+
+
+
 # [0.3.0](https://github.com/qxy-fe/configs/compare/@qxy/stylelint-config@0.2.5...@qxy/stylelint-config@0.3.0) (2021-11-04)
 
 
