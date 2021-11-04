@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/qxy-fe/configs/compare/@qxy/stylelint-config@0.2.5...@qxy/stylelint-config@0.3.0) (2021-11-04)
+
+
+### Features
+
+* bump to stylelint@14 ([645f0ba](https://github.com/qxy-fe/configs/commit/645f0ba33efee8a2846d92399700c4472bb3df56))
+
+
+
+
+
 ## [0.2.5](https://github.com/qxy-fe/configs/compare/@qxy/stylelint-config@0.2.4...@qxy/stylelint-config@0.2.5) (2021-09-15)
 
 **Note:** Version bump only for package @qxy/stylelint-config
