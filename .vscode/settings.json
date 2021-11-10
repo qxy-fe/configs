@@ -16,6 +16,9 @@
   "[scss]": {
     "editor.formatOnSave": false
   },
+  "[vue]": {
+    "editor.formatOnSave": false
+  },
   "cSpell.words": [
     "Cyclomatic",
     "errored",

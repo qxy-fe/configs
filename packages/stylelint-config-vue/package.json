@@ -1,0 +1,37 @@
+{
+  "name": "@qxy/stylelint-config-vue",
+  "version": "0.0.1",
+  "description": "qxy-fe stylelint config for vue SFC",
+  "keywords": [
+    "stylelint-config",
+    "qxy-fe",
+    "vue"
+  ],
+  "homepage": "https://github.com/qxy-fe/configs#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qxy-fe/configs.git",
+    "directory": "packages/stylelint-config-vue"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "postcss-html": "^1.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    {
+      "name": "ntnyq",
+      "email": "ntnyq13@gmail.com",
+      "url": "https://ntnyq.com"
+    }
+  ]
+}
