@@ -1,0 +1,39 @@
+{
+  "name": "@qxy/stylelint-config-scss",
+  "version": "0.0.1",
+  "description": "qxy-fe stylelint config for SCSS syntax",
+  "keywords": [
+    "stylelint-config",
+    "qxy-fe",
+    "scss"
+  ],
+  "homepage": "https://github.com/qxy-fe/configs#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qxy-fe/configs.git",
+    "directory": "packages/stylelint-config-scss"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@qxy/stylelint-config": "0.4.0",
+    "postcss-scss": "^4.0.2",
+    "stylelint-scss": "^4.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    {
+      "name": "ntnyq",
+      "email": "ntnyq13@gmail.com",
+      "url": "https://ntnyq.com"
+    }
+  ]
+}
