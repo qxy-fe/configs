@@ -1,6 +1,6 @@
 {
   "name": "@qxy/stylelint-config-scss",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "qxy-fe stylelint config for SCSS syntax",
   "keywords": [
     "stylelint-config",
@@ -22,7 +22,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@qxy/stylelint-config": "0.4.0",
+    "@qxy/stylelint-config": "0.4.1",
     "postcss-scss": "^4.0.2",
     "stylelint-scss": "^4.0.0"
   },

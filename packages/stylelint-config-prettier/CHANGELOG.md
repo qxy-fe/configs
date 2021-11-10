@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/qxy-fe/configs/compare/@qxy/stylelint-config-prettier@0.1.2...@qxy/stylelint-config-prettier@0.1.3) (2021-11-10)
+
+
+### Bug Fixes
+
+* remove useless code ([872fc7f](https://github.com/qxy-fe/configs/commit/872fc7fd1fdbcad6c75ccec281f5877f4fd52597))
+
+
+
+
+
 ## [0.1.2](https://github.com/qxy-fe/configs/compare/@qxy/stylelint-config-prettier@0.1.1...@qxy/stylelint-config-prettier@0.1.2) (2021-10-15)
 
 **Note:** Version bump only for package @qxy/stylelint-config-prettier
