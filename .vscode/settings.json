@@ -3,9 +3,17 @@
   "editor.codeActionsOnSave": {
     "source.eslint.fixAll": true
   },
-  "eslint.validate": ["javascript"],
+  "eslint.validate": [
+    "javascript"
+  ],
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[css]": {
+    "editor.formatOnSave": false
+  },
+  "[scss]": {
     "editor.formatOnSave": false
   },
   "cSpell.words": [
