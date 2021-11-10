@@ -34,6 +34,14 @@ Sharable eslint config with prettier support for VueJs of QXY fe team
 
 Sharable stylelint config of QXY fe team
 
+**[stylelint-config-scss](./packages/stylelint-config-scss)**
+
+Sharable stylelint config for SCSS syntax of QXY fe team
+
+**[stylelint-config-vue](./packages/stylelint-config-vue)**
+
+Sharable stylelint config for vue SFC of QXY fe team
+
 **[stylelint-config-order](./packages/stylelint-config-order)**
 
 Sharable stylelint config with custom order of QXY fe team
