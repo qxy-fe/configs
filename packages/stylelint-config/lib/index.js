@@ -9,13 +9,6 @@ module.exports = {
     'stylelint-config-standard',
   ],
 
-  plugins: [
-    /**
-     * @see https://github.com/kristerkari/stylelint-scss
-     */
-    'stylelint-scss',
-  ],
-
   // Globs to ignore specific files
   ignoreFiles: [
     'node_modules',
@@ -24,9 +17,6 @@ module.exports = {
   ],
 
   rules: {
-    // Disabled rules
-    'at-rule-no-unknown': null,
-
     // Specify double quotes around strings
     'string-quotes': 'double',
 
@@ -80,36 +70,5 @@ module.exports = {
 
     // Specify modern or legacy notation for applicable color-functions
     'color-function-notation': 'legacy',
-
-    // =============================== //
-    // SCSS Rules //
-    // =============================== //
-
-    // Disallow unknown at-rules
-    'scss/at-rule-no-unknown': true,
-
-    // Requires a whitespace before the colon in $-variable declarations
-    'scss/dollar-variable-colon-space-after': 'always',
-
-    // Disallow whitespace before the colon in $-variable declarations
-    'scss/dollar-variable-colon-space-before': 'never',
-
-    // Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers
-    'scss/dollar-variable-no-missing-interpolation': true,
-
-    // Specify a pattern for Sass-like variables
-    'scss/dollar-variable-pattern': '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
-
-    // Require whitespace after the // in //-comments
-    'scss/double-slash-comment-whitespace-inside': 'always',
-
-    // Disallow linebreaks before Sass operators
-    'scss/operator-no-newline-before': true,
-
-    // Disallow unspaced operators in Sass operations
-    'scss/operator-no-unspaced': true,
-
-    // Disallow redundant nesting selectors (&)
-    'scss/selector-no-redundant-nesting-selector': true,
   },
 }
