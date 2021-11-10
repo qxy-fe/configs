@@ -40,6 +40,12 @@ module.exports = {
     // Require a leading zero for fractional numbers less than 1
     'number-leading-zero': 'always',
 
+    // Specify percentage or number notation for alpha-values
+    'alpha-value-notation': 'number',
+
+    // Specify modern or legacy notation for applicable color-functions
+    'color-function-notation': 'legacy',
+
     // Require quotes for attribute values
     'selector-attribute-quotes': 'always',
 
@@ -52,23 +58,11 @@ module.exports = {
     // Specify a pattern for id selectors
     'selector-id-pattern': '^([a-z][a-z0-9]*)(_[a-z0-9]+)*$',
 
-    // Disallow unknown pseudo-element selectors
-    // Allow v-deep for VueJS compatibility
-    'selector-pseudo-element-no-unknown': [true, {
-      ignorePseudoElements: ['v-deep'],
-    }],
-
     // Require or disallow an empty line before at-rules
     'at-rule-empty-line-before': ['always', {
       except: ['inside-block', 'blockless-after-same-name-blockless'],
       ignore: ['first-nested', 'after-comment'],
       ignoreAtRules: ['import', 'else'],
     }],
-
-    // Specify percentage or number notation for alpha-values
-    'alpha-value-notation': 'number',
-
-    // Specify modern or legacy notation for applicable color-functions
-    'color-function-notation': 'legacy',
   },
 }
