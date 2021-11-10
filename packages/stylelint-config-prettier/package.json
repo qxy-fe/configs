@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-prettier": "^1.2.0"
+    "stylelint-prettier": "^2.0.0"
   },
   "publishConfig": {
     "access": "public"
