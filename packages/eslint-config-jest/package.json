@@ -1,6 +1,6 @@
 {
   "name": "@qxy/eslint-config-jest",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "qxy-fe eslint config for Jest",
   "keywords": [
     "eslint-config",

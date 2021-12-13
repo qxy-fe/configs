@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.14](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.13...@qxy/eslint-config-vue@0.5.14) (2021-12-13)
+
+**Note:** Version bump only for package @qxy/eslint-config-vue
+
+
+
+
+
 ## [0.5.13](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.12...@qxy/eslint-config-vue@0.5.13) (2021-10-15)
 
 **Note:** Version bump only for package @qxy/eslint-config-vue

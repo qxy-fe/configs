@@ -1,6 +1,6 @@
 {
   "name": "@qxy/stylelint-config-prettier",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "qxy-fe stylelint config with prettier",
   "keywords": [
     "stylelint-config",
