@@ -95,7 +95,7 @@ module.exports = {
      * @see https://eslint.vuejs.org/rules/component-tags-order.html
      */
     'vue/component-tags-order': ['error', {
-      order: ['template', 'script', 'style'],
+      order: [['template', 'script'], 'style'],
     }],
 
     /**
@@ -244,7 +244,7 @@ module.exports = {
      * @see https://eslint.vuejs.org/rules/no-unsupported-features.html
      */
     'vue/no-unsupported-features': ['error', {
-      version: '2.6.0',
+      version: '3.2.0',
     }],
 
     /**
@@ -346,5 +346,12 @@ module.exports = {
      * @see https://eslint.vuejs.org/rules/next-tick-style.html
      */
     'vue/next-tick-style': ['error', 'promise'],
+
+    /**
+     * Disallow adding multiple root nodes to the template
+     *
+     * @see https://eslint.vuejs.org/rules/no-multiple-template-root.html
+     */
+    'vue/no-multiple-template-root': 'off',
   },
 }
