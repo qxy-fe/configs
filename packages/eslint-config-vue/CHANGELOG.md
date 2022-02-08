@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.16...@qxy/eslint-config-vue@0.6.0) (2022-02-08)
+
+
+### Features
+
+* vue3 is default ([19883a1](https://github.com/qxy-fe/configs/commit/19883a1ae7fb35ba9df42f442aaa387252e46996))
+
+
+
+
+
 ## [0.5.16](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config-vue@0.5.15...@qxy/eslint-config-vue@0.5.16) (2022-01-24)
 
 **Note:** Version bump only for package @qxy/eslint-config-vue
