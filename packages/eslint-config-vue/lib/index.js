@@ -353,5 +353,19 @@ module.exports = {
      * @see https://eslint.vuejs.org/rules/no-multiple-template-root.html
      */
     'vue/no-multiple-template-root': 'off',
+
+    /**
+     * Require shorthand form attribute when v-bind value is true
+     *
+     * @see https://eslint.vuejs.org/rules/prefer-true-attribute-shorthand.html
+     */
+    'vue/prefer-true-attribute-shorthand': ['error', 'always'],
+
+    /**
+     * Enforce import from 'vue' instead of import from '@vue/*'
+     *
+     * @see https://eslint.vuejs.org/rules/prefer-import-from-vue.html
+     */
+    'vue/prefer-import-from-vue': 'error',
   },
 }
