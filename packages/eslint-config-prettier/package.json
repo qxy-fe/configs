@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@qxy/eslint-config": "0.4.3",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0"
   },
   "peerDependencies": {
