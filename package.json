@@ -8,7 +8,8 @@
     "bootstrap": "yarn || npm i",
     "lint": "eslint packages",
     "release": "npm run lint && lerna publish",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "readme": "node scripts/readme.mjs"
   },
   "commitlint": {
     "extends": [
@@ -24,6 +25,9 @@
   "prettier": "@qxy/prettier-config",
   "eslintConfig": {
     "extends": "@qxy",
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    },
     "overrides": [
       {
         "files": "**/__tests__/**/*.spec.js",
@@ -35,7 +39,7 @@
     "root": true
   },
   "dependencies": {
-    "@qxy/eslint-config": "^0.4.0",
+    "@qxy/eslint-config": "^0.4.3",
     "@qxy/prettier-config": "^0.3.0"
   },
   "devDependencies": {
@@ -50,6 +54,7 @@
     "lint-staged": "^12.3.5",
     "prettier": "^2.5.1",
     "sort-package-json": "^1.54.0",
-    "stylelint": "^14.5.3"
+    "stylelint": "^14.5.3",
+    "zx": "^5.2.0"
   }
 }
