@@ -15,33 +15,37 @@ module.exports = {
 
   rules: {
     // Disabled rules in favor of SCSS
-    'at-rule-no-unknown': null,
     'comment-no-empty': null,
+    'at-rule-no-unknown': null,
+    'function-no-unknown': null,
 
     // =============================== //
     // SCSS Rules //
     // =============================== //
 
-    // Disallow unknown at-rules
-    'scss/at-rule-no-unknown': true,
-
     // Disallow empty comments
     'scss/comment-no-empty': true,
 
+    // Disallow unknown at-rules
+    'scss/at-rule-no-unknown': true,
+
+    // Disallow unknown functions
+    'scss/function-no-unknown': true,
+
     // Requires a whitespace before the colon in $-variable declarations
-    'scss/dollar-variable-colon-space-after': 'always',
+    'scss/dollar-variable-colon-space-after': `always`,
 
     // Disallow whitespace before the colon in $-variable declarations
-    'scss/dollar-variable-colon-space-before': 'never',
+    'scss/dollar-variable-colon-space-before': `never`,
 
     // Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers
     'scss/dollar-variable-no-missing-interpolation': true,
 
     // Specify a pattern for Sass-like variables
-    'scss/dollar-variable-pattern': '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+    'scss/dollar-variable-pattern': `^([a-z][a-z0-9]*)(-[a-z0-9]+)*$`,
 
     // Require whitespace after the // in //-comments
-    'scss/double-slash-comment-whitespace-inside': 'always',
+    'scss/double-slash-comment-whitespace-inside': `always`,
 
     // Disallow linebreaks before Sass operators
     'scss/operator-no-newline-before': true,
