@@ -59,5 +59,3 @@
 [![NPM VERSION](https://img.shields.io/npm/v/@qxy/prettier-config.svg)](https://www.npmjs.com/package/@qxy/prettier-config)
 
 <!-- END PRESETS -->
-
-

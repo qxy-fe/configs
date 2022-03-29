@@ -23,6 +23,8 @@
     "codeql",
     "Cyclomatic",
     "errored",
+    "esno",
+    "kolorist",
     "noopener",
     "noreferrer",
     "stylelintrc",
