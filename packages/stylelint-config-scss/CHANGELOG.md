@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/qxy-fe/configs/compare/@qxy/stylelint-config-scss@0.1.3...@qxy/stylelint-config-scss@0.2.0) (2022-03-29)
+
+
+### Features
+
+* add scss rule ([f2e43df](https://github.com/qxy-fe/configs/commit/f2e43df18d0eae022211e4d941da78c043819a54))
+
+
+
+
+
 ## [0.1.3](https://github.com/qxy-fe/configs/compare/@qxy/stylelint-config-scss@0.1.2...@qxy/stylelint-config-scss@0.1.3) (2022-02-11)
 
 **Note:** Version bump only for package @qxy/stylelint-config-scss
