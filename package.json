@@ -43,18 +43,18 @@
     "@qxy/prettier-config": "^0.3.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.1",
+    "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@commitlint/config-lerna-scopes": "^16.2.2",
     "@types/jest": "^27.4.1",
-    "eslint": "^8.10.0",
+    "eslint": "^8.12.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
     "lerna": "^4.0.0",
-    "lint-staged": "^12.3.5",
-    "prettier": "^2.5.1",
-    "sort-package-json": "^1.54.0",
-    "stylelint": "^14.5.3",
-    "zx": "^5.2.0"
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.1",
+    "sort-package-json": "^1.55.0",
+    "stylelint": "^14.6.1",
+    "zx": "^6.0.7"
   }
 }
