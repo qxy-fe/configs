@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config@0.4.3...@qxy/eslint-config@0.5.0) (2022-03-31)
+
+
+### Features
+
+* disable ignore dot files ([0270954](https://github.com/qxy-fe/configs/commit/027095451746194599328b5d5ee8fbc1a321fe76))
+
+
+
+
+
 ## [0.4.3](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config@0.4.2...@qxy/eslint-config@0.4.3) (2022-01-12)
 
 **Note:** Version bump only for package @qxy/eslint-config
