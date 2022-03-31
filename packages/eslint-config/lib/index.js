@@ -10,6 +10,8 @@ module.exports = {
     'standard',
   ],
 
+  ignorePatterns: [`!.*.{js,ts}`],
+
   rules: {
     /**
      * Requires the use of single quotes wherever possible
