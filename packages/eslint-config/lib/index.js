@@ -7,10 +7,19 @@
 module.exports = {
   extends: [
     // Standard JavaScript style
-    'standard',
+    `standard`,
+    `plugin:eslint-comments/recommended`,
   ],
 
-  ignorePatterns: [`!.*.{js,ts}`],
+  ignorePatterns: [
+    `__snapshots__`,
+    `coverage`,
+    `public`,
+    `static`,
+    `dist`,
+    `*.min.*`,
+    `!.*.{js,ts}`,
+  ],
 
   rules: {
     /**
@@ -115,5 +124,12 @@ module.exports = {
      * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/newline-after-import.md
      */
     'import/newline-after-import': ['error'],
+
+    /**
+     * Disallow unused `eslint-disable` comments
+     *
+     * @see https://github.com/mysticatea/eslint-plugin-eslint-comments/blob/master/docs/rules/no-unused-disable.md
+     */
+    'eslint-comments/no-unused-disable': [`error`],
   },
 }
