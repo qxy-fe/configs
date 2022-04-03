@@ -40,9 +40,9 @@ fs.writeFileSync(
   `README.md`,
   fs
     .readFileSync(`README.md`, `utf-8`)
-    .replace(/<!-- BEGIN PRESETS -->[\W\w]*<!-- END PRESETS -->/, () =>
+    .replace(/<!-- PRESETS START -->[\W\w]*<!-- PRESETS END -->/, () =>
       [
-        `<!-- BEGIN PRESETS -->`,
+        `<!-- PRESETS START -->`,
         getPresetBlock({
           title: `ESLint`,
           presets: eslintPresets,
@@ -55,7 +55,7 @@ fs.writeFileSync(
           title: `Prettier`,
           presets: prettierPresets,
         }),
-        `<!-- END PRESETS -->`,
+        `<!-- PRESETS END -->`,
         console.log(`${green(`README.md`)} updated successfully!`),
       ]
         .join(`\n\n`)

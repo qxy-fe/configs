@@ -9,7 +9,7 @@
     "lint": "eslint packages",
     "release": "npm run lint && lerna publish",
     "test": "lerna run test",
-    "readme": "esno scripts/readme.ts"
+    "readme": "esno scripts/gen-readme.ts"
   },
   "commitlint": {
     "extends": [
@@ -39,7 +39,7 @@
     "root": true
   },
   "dependencies": {
-    "@qxy/eslint-config": "^0.4.3",
+    "@qxy/eslint-config": "^0.5.0",
     "@qxy/prettier-config": "^0.3.0"
   },
   "devDependencies": {
@@ -54,7 +54,7 @@
     "kolorist": "^1.5.1",
     "lerna": "^4.0.0",
     "lint-staged": "^12.3.7",
-    "prettier": "^2.6.1",
+    "prettier": "^2.6.2",
     "sort-package-json": "^1.55.0",
     "stylelint": "^14.6.1"
   }

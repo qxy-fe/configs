@@ -6,7 +6,7 @@
 
 :book: [Docs](https://fe-docs.goyfe.com/utils-lib/eslint.html)
 
-<!-- BEGIN PRESETS -->
+<!-- PRESETS START -->
 
 ## ESLint
 
@@ -58,4 +58,4 @@
 
 [![NPM VERSION](https://img.shields.io/npm/v/@qxy/prettier-config.svg)](https://www.npmjs.com/package/@qxy/prettier-config)
 
-<!-- END PRESETS -->
+<!-- PRESETS END -->
