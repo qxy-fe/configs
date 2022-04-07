@@ -1,6 +1,6 @@
 {
   "name": "@qxy/eslint-config-prettier-vue",
-  "version": "0.2.19",
+  "version": "0.2.20",
   "description": "qxy-fe eslint config with prettier for Vue.js",
   "keywords": [
     "eslint-config",
@@ -20,8 +20,8 @@
     "lib"
   ],
   "dependencies": {
-    "@qxy/eslint-config-prettier": "0.2.16",
-    "@qxy/eslint-config-vue": "0.7.1"
+    "@qxy/eslint-config-prettier": "0.2.17",
+    "@qxy/eslint-config-vue": "0.7.2"
   },
   "publishConfig": {
     "access": "public"

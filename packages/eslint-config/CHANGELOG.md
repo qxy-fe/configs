@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config@0.5.0...@qxy/eslint-config@0.6.0) (2022-04-07)
+
+
+### Features
+
+* setup comments plugin ([777315a](https://github.com/qxy-fe/configs/commit/777315a168444df86628e29b2a2035b0a9c683d2))
+
+
+
+
+
 # [0.5.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config@0.4.3...@qxy/eslint-config@0.5.0) (2022-03-31)
 
 
