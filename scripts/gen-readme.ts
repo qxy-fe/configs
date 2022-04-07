@@ -12,6 +12,7 @@ const eslintPresets: IPreset[] = [
   `eslint-config`,
   `eslint-config-vue`,
   `eslint-config-jest`,
+  `eslint-config-typescript`,
   `eslint-config-prettier`,
   `eslint-config-prettier-vue`,
 ]
