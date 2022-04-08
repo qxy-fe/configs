@@ -54,7 +54,7 @@ module.exports = {
   // Prettier can insert a special @format marker at the top of files specifying that the file has been formatted with prettier.
   insertPragma: false,
 
-  // By default, Prettier will wrap markdown text as-is since some services use a line-break-sensitive renderer, e.g. GitHub comment and BitBucket.
+  // By default, Prettier will wrap markdown text as-is since some services use a line-break-sensitive renderer, e.g. GitHub comment and Bitbucket.
   proseWrap: 'preserve',
 
   // Specify the global whitespace sensitivity for HTML files

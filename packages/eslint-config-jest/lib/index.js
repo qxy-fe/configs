@@ -1,5 +1,5 @@
 /**
- * Eslint config for Jest
+ * ESLint config for Jest
  * @see https://github.com/jest-community/eslint-plugin-jest
  */
 
