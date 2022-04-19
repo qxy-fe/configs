@@ -22,6 +22,10 @@
 
 [![NPM VERSION](https://img.shields.io/npm/v/@qxy/eslint-config-jest.svg)](https://www.npmjs.com/package/@qxy/eslint-config-jest)
 
+**[eslint-config-typescript](./packages/eslint-config-typescript)**
+
+[![NPM VERSION](https://img.shields.io/npm/v/@qxy/eslint-config-typescript.svg)](https://www.npmjs.com/package/@qxy/eslint-config-typescript)
+
 **[eslint-config-prettier](./packages/eslint-config-prettier)**
 
 [![NPM VERSION](https://img.shields.io/npm/v/@qxy/eslint-config-prettier.svg)](https://www.npmjs.com/package/@qxy/eslint-config-prettier)
