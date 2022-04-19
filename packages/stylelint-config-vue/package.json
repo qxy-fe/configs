@@ -1,6 +1,6 @@
 {
   "name": "@qxy/stylelint-config-vue",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "qxy-fe stylelint config for vue SFC",
   "keywords": [
     "stylelint-config",

@@ -1,6 +1,6 @@
 {
   "name": "@qxy/prettier-config",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "qxy-fe prettier config",
   "keywords": [
     "prettier-config",

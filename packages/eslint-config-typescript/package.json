@@ -1,6 +1,6 @@
 {
   "name": "@qxy/eslint-config-typescript",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "qxy-fe eslint config for TypeScript",
   "keywords": [
     "eslint-config",
