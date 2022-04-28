@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@qxy/stylelint-config": "0.4.3",
-    "postcss-scss": "^4.0.3",
+    "postcss-scss": "^4.0.4",
     "stylelint-scss": "^4.2.0"
   },
   "publishConfig": {

@@ -22,7 +22,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "eslint-plugin-jest": "^26.1.4"
+    "eslint-plugin-jest": "^26.1.5"
   },
   "publishConfig": {
     "access": "public"
