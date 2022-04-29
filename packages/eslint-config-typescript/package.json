@@ -1,6 +1,6 @@
 {
   "name": "@qxy/eslint-config-typescript",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "qxy-fe eslint config for TypeScript",
   "keywords": [
     "eslint-config",
@@ -19,7 +19,7 @@
     "lib"
   ],
   "dependencies": {
-    "@qxy/eslint-config": "0.6.0",
+    "@qxy/eslint-config": "0.7.0",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0"
   },

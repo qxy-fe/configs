@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config@0.6.0...@qxy/eslint-config@0.7.0) (2022-04-29)
+
+
+### Features
+
+* standard v17 ([31ca5e1](https://github.com/qxy-fe/configs/commit/31ca5e1fdd88588066539341203032efad6fbd62))
+
+
+
+
+
 # [0.6.0](https://github.com/qxy-fe/configs/compare/@qxy/eslint-config@0.5.0...@qxy/eslint-config@0.6.0) (2022-04-07)
 
 
