@@ -1,9 +1,0 @@
-@mixin color {
-}
-
-.box {
-  @include color;
-  $color: red;
-  --color: red;
-  color: red;
-}

@@ -27,11 +27,14 @@
     "kolorist",
     "noopener",
     "noreferrer",
+    "pnpm",
     "stroustrup",
     "stylelintrc",
     "trbl",
     "uncategorized",
     "unspaced",
+    "vite",
+    "vitest",
     "zcong"
   ]
 }

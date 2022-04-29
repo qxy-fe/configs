@@ -18,11 +18,8 @@
   "files": [
     "lib"
   ],
-  "scripts": {
-    "test": "jest"
-  },
   "dependencies": {
-    "@qxy/stylelint-config": "0.4.3",
+    "@qxy/stylelint-config": "workspace:*",
     "postcss-scss": "^4.0.4",
     "stylelint-scss": "^4.2.0"
   },

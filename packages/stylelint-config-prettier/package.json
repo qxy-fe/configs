@@ -18,9 +18,6 @@
   "files": [
     "lib"
   ],
-  "scripts": {
-    "test": "jest"
-  },
   "dependencies": {
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-prettier": "^2.0.0"

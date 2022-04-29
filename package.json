@@ -1,20 +1,14 @@
 {
   "name": "root",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
-    "bootstrap": "yarn || npm i",
     "lint": "eslint packages",
-    "release": "npm run lint && lerna publish",
-    "test": "lerna run test",
-    "readme": "esno scripts/gen-readme.ts"
+    "readme": "esno scripts/gen-readme.ts",
+    "test": "vitest --passWithNoTests"
   },
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional",
-      "@commitlint/config-lerna-scopes"
+      "@commitlint/config-conventional"
     ]
   },
   "lint-staged": {
@@ -25,37 +19,34 @@
   "prettier": "@qxy/prettier-config",
   "eslintConfig": {
     "extends": "@qxy",
-    "parserOptions": {
-      "ecmaVersion": "latest"
-    },
-    "overrides": [
-      {
-        "files": "**/__tests__/**/*.spec.js",
-        "env": {
-          "jest": true
-        }
-      }
-    ],
     "root": true
   },
   "dependencies": {
-    "@qxy/eslint-config": "^0.6.0",
-    "@qxy/prettier-config": "^0.3.0"
+    "@qxy/eslint-config": "workspace:*",
+    "@qxy/prettier-config": "workspace:*"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.22.0",
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
-    "@commitlint/config-lerna-scopes": "^16.2.4",
-    "@types/jest": "^27.4.1",
     "eslint": "^8.14.0",
     "esno": "^0.14.1",
     "husky": "^7.0.4",
-    "jest": "^28.0.2",
     "kolorist": "^1.5.1",
-    "lerna": "^4.0.0",
     "lint-staged": "^12.4.1",
+    "pnpm": "^6.32.11",
     "prettier": "^2.6.2",
     "sort-package-json": "^1.55.0",
-    "stylelint": "^14.8.0"
+    "stylelint": "^14.8.0",
+    "vitest": "^0.10.0"
+  },
+  "packageManager": "pnpm@6.32.11",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "typescript",
+        "postcss"
+      ]
+    }
   }
 }

@@ -18,9 +18,6 @@
   "files": [
     "lib"
   ],
-  "scripts": {
-    "test": "jest"
-  },
   "dependencies": {
     "stylelint-order": "^5.0.0"
   },

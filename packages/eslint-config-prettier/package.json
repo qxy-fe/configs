@@ -18,11 +18,8 @@
   "files": [
     "lib"
   ],
-  "scripts": {
-    "test": "jest"
-  },
   "dependencies": {
-    "@qxy/eslint-config": "0.7.0",
+    "@qxy/eslint-config": "workspace:*",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0"
   },

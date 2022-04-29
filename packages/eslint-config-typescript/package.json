@@ -19,7 +19,7 @@
     "lib"
   ],
   "dependencies": {
-    "@qxy/eslint-config": "0.7.0",
+    "@qxy/eslint-config": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0"
   },

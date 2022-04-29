@@ -17,9 +17,6 @@
   "files": [
     "lib"
   ],
-  "scripts": {
-    "test": "jest"
-  },
   "dependencies": {
     "stylelint-config-standard": "^25.0.0"
   },

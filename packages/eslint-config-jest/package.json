@@ -18,9 +18,6 @@
   "files": [
     "lib"
   ],
-  "scripts": {
-    "test": "jest"
-  },
   "dependencies": {
     "eslint-plugin-jest": "^26.1.5"
   },
