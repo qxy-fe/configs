@@ -38,7 +38,41 @@ module.exports = {
     'no-useless-constructor': `off`,
 
     indent: `off`,
-    '@typescript-eslint/indent': [`error`, 2],
+    '@typescript-eslint/indent': [`error`, 2, {
+      SwitchCase: 1,
+      VariableDeclarator: 1,
+      outerIIFEBody: 1,
+      MemberExpression: 1,
+      FunctionDeclaration: { parameters: 1, body: 1 },
+      FunctionExpression: { parameters: 1, body: 1 },
+      CallExpression: { arguments: 1 },
+      ArrayExpression: 1,
+      ObjectExpression: 1,
+      ImportDeclaration: 1,
+      flatTernaryExpressions: false,
+      ignoreComments: false,
+      ignoredNodes: [
+        `TemplateLiteral *`,
+        `JSXElement`,
+        `JSXElement > *`,
+        `JSXAttribute`,
+        `JSXIdentifier`,
+        `JSXNamespacedName`,
+        `JSXMemberExpression`,
+        `JSXSpreadAttribute`,
+        `JSXExpressionContainer`,
+        `JSXOpeningElement`,
+        `JSXClosingElement`,
+        `JSXFragment`,
+        `JSXOpeningFragment`,
+        `JSXClosingFragment`,
+        `JSXText`,
+        `JSXEmptyExpression`,
+        `JSXSpreadChild`,
+        `TSTypeParameterInstantiation`,
+      ],
+      offsetTernaryExpressions: true,
+    }],
 
     'no-unused-vars': `off`,
     '@typescript-eslint/no-unused-vars': [`error`, {
@@ -60,7 +94,7 @@ module.exports = {
     }],
 
     'brace-style': `off`,
-    '@typescript-eslint/brace-style': [`error`, `stroustrup`, { allowSingleLine: true }],
+    '@typescript-eslint/brace-style': [`error`, `1tbs`, { allowSingleLine: true }],
 
     'comma-dangle': `off`,
     '@typescript-eslint/comma-dangle': [`error`, `always-multiline`],
@@ -82,4 +116,13 @@ module.exports = {
     '@typescript-eslint/ban-types': `off`,
     '@typescript-eslint/no-namespace': `off`,
   },
+
+  overrides: [
+    {
+      files: [`*.js`],
+      rules: {
+        '@typescript-eslint/no-var-requires': `off`,
+      },
+    },
+  ],
 }

@@ -37,7 +37,7 @@
     "pnpm": "^6.32.11",
     "prettier": "^2.6.2",
     "sort-package-json": "^1.55.0",
-    "stylelint": "^14.8.0",
+    "stylelint": "^14.8.1",
     "vitest": "^0.10.0"
   },
   "packageManager": "pnpm@6.32.11",
