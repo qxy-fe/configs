@@ -17,8 +17,13 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v2
-      - run: yarn install
-      - run: yarn test
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
+          run_install: true
+      - run: pnpm install
+      - run: pnpm test
 
   # notify:
   #   runs-on: ubuntu-latest
