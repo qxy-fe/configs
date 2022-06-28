@@ -35,7 +35,9 @@
     "uncategorized",
     "unspaced",
     "vite",
+    "vitepress",
     "vitest",
+    "vuepress",
     "zcong"
   ]
 }

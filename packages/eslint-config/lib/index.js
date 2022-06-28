@@ -5,6 +5,12 @@
  */
 
 module.exports = {
+  env: {
+    es6: true,
+    browser: true,
+    node: true,
+  },
+
   extends: [
     // Standard JavaScript style
     `standard`,
@@ -12,69 +18,109 @@ module.exports = {
   ],
 
   ignorePatterns: [
-    `__snapshots__`,
+    `*.min.*`,
+    `CHANGELOG.md`,
+    `LICENSE*`,
+    `dist`,
+    `output`,
     `coverage`,
     `public`,
     `static`,
-    `dist`,
-    `*.min.*`,
-    `!.*.{js,ts}`,
+    `temp`,
+    `packages-lock.json`,
+    `pnpm-lock.yaml`,
+    `yarn.lock`,
+    `__snapshots__`,
+    `!.github`,
+    `!.vitepress`,
+    `!.vuepress`,
+    `!.vscode`,
   ],
 
+  settings: {
+    'import/resolver': {
+      node: { extensions: [`.js`, `.mjs`] },
+    },
+  },
+
   rules: {
-    /**
-     * Requires the use of single quotes wherever possible
-     *
-     * @see https://eslint.org/docs/rules/quotes
-     */
+    'import/newline-after-import': 'error',
+
+    'comma-dangle': ['error', 'always-multiline'],
+
+    // es6+
+    'no-var': 'error',
+    'prefer-spread': `error`,
+    'prefer-template': `error`,
+    'prefer-rest-params': `error`,
+    'template-curly-spacing': `error`,
+    'generator-star-spacing': `off`,
     quotes: ['error', 'single', {
       allowTemplateLiterals: true,
     }],
+    'arrow-parens': [`error`, `as-needed`, {
+      requireForBlockBody: false,
+    }],
+    'prefer-const': [`error`, {
+      destructuring: `any`,
+      ignoreReadBeforeAssign: true,
+    }],
+    'prefer-arrow-callback': [`error`, {
+      allowNamedFunctions: false,
+      allowUnboundThis: true,
+    }],
+    'object-shorthand': [`error`, `always`, {
+      ignoreConstructors: false,
+      avoidQuotes: true,
+    }],
+    'spaced-comment': [`error`, `always`, {
+      line: {
+        markers: [`/`],
+        exceptions: [`/`, `#`],
+      },
+      block: {
+        markers: [`!`],
+        exceptions: [`*`],
+        balanced: true,
+      },
+    }],
 
-    /**
-     * Requires the use of `const` or `let` instead of `var`
-     *
-     * @see https://eslint.org/docs/rules/no-var
-     */
-    'no-var': ['error'],
-
-    /**
-     * Requires the use of trailing commas in object and array literals
-     *
-     * @see https://eslint.org/docs/rules/comma-dangle
-     */
-    'comma-dangle': ['error', 'always-multiline'],
-
-    /**
-     * Enforce a maximum file length
-     *
-     * @see https://eslint.org/docs/rules/max-lines
-     */
+    // best practices
+    eqeqeq: [`error`, `smart`],
+    'max-params': ['error', { max: 5 }],
+    complexity: ['error', { max: 30 }],
+    'array-callback-return': `error`,
+    'block-scoped-var': `error`,
+    'consistent-return': `off`,
+    'no-alert': `warn`,
+    'no-case-declarations': `error`,
+    'no-multi-spaces': `error`,
+    'no-multi-str': `error`,
+    'no-with': `error`,
+    'no-void': `error`,
+    'no-useless-escape': `off`,
+    'vars-on-top': `error`,
+    'require-await': `off`,
+    'no-return-assign': `off`,
+    'operator-linebreak': [`error`, `before`],
+    'max-depth': ['error', { max: 5 }],
+    'max-nested-callbacks': ['error', { max: 10 }],
+    'max-statements-per-line': ['error', { max: 2 }],
+    'no-use-before-define': [`error`, {
+      functions: false,
+      classes: false,
+      variables: true,
+    }],
     'max-lines': ['error', {
       max: 1000,
       skipComments: true,
       skipBlankLines: true,
     }],
-
-    /**
-     * Limit Cyclomatic Complexity
-     *
-     * @see https://eslint.org/docs/rules/complexity
-     */
-    complexity: ['error', { max: 30 }],
-
-    /**
-     * Enforce a maximum number of parameters in function definitions
-     *
-     * @see https://eslint.org/docs/rules/max-params
-     */
-    'max-params': ['error', { max: 5 }],
-
-    /**
-     * Enforce a maximum line length
-     *
-     * @see https://eslint.org/docs/rules/max-len
-     */
+    'max-lines-per-function': ['error', {
+      max: 100,
+      skipBlankLines: true,
+      skipComments: true,
+    }],
     'max-len': ['error', {
       code: 200,
       tabWidth: 2,
@@ -87,49 +133,11 @@ module.exports = {
     }],
 
     /**
-     * Enforce a maximum depth that callbacks can be nested
-     *
-     * @see https://eslint.org/docs/rules/max-nested-callbacks
-     */
-    'max-nested-callbacks': ['error', { max: 10 }],
-
-    /**
-     * Enforce a maximum function length
-     *
-     * @see https://eslint.org/docs/rules/max-lines-per-function
-     */
-    'max-lines-per-function': ['error', {
-      max: 100,
-      skipBlankLines: true,
-      skipComments: true,
-    }],
-
-    /**
-     * Enforce a maximum number of statements allowed per line
-     *
-     * @see https://eslint.org/docs/rules/max-statements-per-line
-     */
-    'max-statements-per-line': ['error', { max: 2 }],
-
-    /**
-     * Enforce a maximum depth that blocks can be nested
-     *
-     * @see https://eslint.org/docs/rules/max-depth
-     */
-    'max-depth': ['error', { max: 5 }],
-
-    /**
-     * Enforces having one empty lines after the last top-level import statement or require call
-     *
-     * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/newline-after-import.md
-     */
-    'import/newline-after-import': ['error'],
-
-    /**
      * Disallow unused `eslint-disable` comments
      *
      * @see https://github.com/mysticatea/eslint-plugin-eslint-comments/blob/master/docs/rules/no-unused-disable.md
      */
-    'eslint-comments/no-unused-disable': [`error`],
+    'eslint-comments/no-unused-disable': `error`,
+    'eslint-comments/disable-enable-pair': [`error`, { allowWholeFile: true }],
   },
 }

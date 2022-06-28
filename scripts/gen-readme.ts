@@ -25,7 +25,7 @@ const stylelintPresets: IPreset[] = [
   `stylelint-config-prettier`,
 ]
 
-const prettierPresets = [`prettier-config`]
+const prettierPresets: IPreset[] = [`prettier-config`]
 
 const getPresetBlock = ({ title, presets }: IPresetBlock) =>
   [
@@ -33,7 +33,7 @@ const getPresetBlock = ({ title, presets }: IPresetBlock) =>
     ...presets.map(
       preset => `**[${preset}](./packages/${preset})**
 
-[![NPM VERSION](https://img.shields.io/npm/v/@qxy/${preset}.svg)](https://www.npmjs.com/package/@qxy/${preset})`
+[![NPM VERSION](https://img.shields.io/npm/v/@qxy/${preset}.svg)](https://www.npmjs.com/package/@qxy/${preset})`,
     ),
   ].join(`\n\n`)
 
@@ -60,7 +60,7 @@ fs.writeFileSync(
         console.log(`${green(`README.md`)} updated successfully!`),
       ]
         .join(`\n\n`)
-        .trimEnd()
+        .trimEnd(),
     ),
-  `utf-8`
+  `utf-8`,
 )

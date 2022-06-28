@@ -30,5 +30,9 @@
       "email": "ntnyq13@gmail.com",
       "url": "https://ntnyq.com"
     }
-  ]
+  ],
+  "devDependencies": {
+    "postcss": "^8.4.14",
+    "stylelint": "^14.9.1"
+  }
 }

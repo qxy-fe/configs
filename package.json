@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "lint": "eslint packages",
-    "readme": "esno scripts/gen-readme.ts",
+    "readme": "tsx scripts/gen-readme.ts",
     "test": "vitest --passWithNoTests"
   },
   "commitlint": {
@@ -26,21 +26,21 @@
     "@qxy/prettier-config": "workspace:*"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.22.0",
-    "@commitlint/cli": "^16.2.4",
-    "@commitlint/config-conventional": "^16.2.4",
-    "eslint": "^8.14.0",
-    "esno": "^0.14.1",
-    "husky": "^7.0.4",
+    "@changesets/cli": "^2.23.0",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "eslint": "^8.18.0",
+    "husky": "^8.0.1",
     "kolorist": "^1.5.1",
-    "lint-staged": "^12.4.1",
-    "pnpm": "^6.32.11",
-    "prettier": "^2.6.2",
+    "lint-staged": "^13.0.3",
+    "pnpm": "^7.4.0",
+    "prettier": "^2.7.1",
     "sort-package-json": "^1.57.0",
-    "stylelint": "^14.8.2",
-    "vitest": "^0.10.2"
+    "stylelint": "^14.9.1",
+    "tsx": "^3.6.0",
+    "vitest": "^0.16.0"
   },
-  "packageManager": "pnpm@7.0.0",
+  "packageManager": "pnpm@7.4.0",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [

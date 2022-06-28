@@ -16,33 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - uses: pnpm/action-setup@v2
-        with:
-          run_install: true
-
       - uses: actions/setup-node@v3
         with:
           cache: pnpm
+      - uses: pnpm/action-setup@v2
 
-      - run: pnpm install
+      - run: pnpm install --frozen-lockfile
       - run: pnpm test
-
-  # notify:
-  #   runs-on: ubuntu-latest
-  #   needs:
-  #     - test
-  #   steps:
-  #     - name: DingDing notify only Push
-  #       uses: zcong1993/actions-ding@master
-  #       if: github.event_name == 'push'
-  #       with:
-  #         dingToken: ${{ secrets.DING_TOKEN }}
-  #         body: |
-  #           {
-  #             "msgtype": "markdown",
-  #             "markdown": {
-  #               "title": "${{ github.repository }} 仓库推送成功",
-  #               "text": "![Random Picture](https://picsum.photos/400/200) \n GitHub 仓库 ${{ github.repository }} 推送成功。\n - [查看文档](https://qxy-fe.github.io/fe-docs/utils-lib/eslint.html) \n - [查看仓库](https://github.com/${{ github.repository }})"
-  #             }
-  #           }

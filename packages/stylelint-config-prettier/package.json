@@ -31,5 +31,9 @@
       "email": "ntnyq13@gmail.com",
       "url": "https://ntnyq.com"
     }
-  ]
+  ],
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "stylelint": "^14.9.1"
+  }
 }

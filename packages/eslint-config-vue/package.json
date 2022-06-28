@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "@qxy/eslint-config": "workspace:*",
-    "eslint-plugin-vue": "^8.7.1"
+    "eslint-plugin-vue": "^9.1.1"
   },
   "peerDependencies": {
     "@babel/core": "^7.12.10",
@@ -35,5 +35,8 @@
       "email": "ntnyq13@gmail.com",
       "url": "https://ntnyq.com"
     }
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^8.18.0"
+  }
 }
