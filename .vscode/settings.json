@@ -4,10 +4,14 @@
     "source.eslint.fixAll": true
   },
   "eslint.validate": [
-    "javascript"
+    "javascript",
+    "typescript"
   ],
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
     "editor.formatOnSave": false
   },
   "[css]": {
@@ -20,11 +24,7 @@
     "editor.formatOnSave": false
   },
   "cSpell.words": [
-    "codeql",
-    "Cyclomatic",
-    "errored",
-    "esno",
-    "IIFE",
+    "iife",
     "kolorist",
     "noopener",
     "noreferrer",
@@ -37,7 +37,6 @@
     "vite",
     "vitepress",
     "vitest",
-    "vuepress",
-    "zcong"
+    "vuepress"
   ]
 }

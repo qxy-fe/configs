@@ -1,23 +1,19 @@
-import fs from 'fs'
-import { green } from 'kolorist'
+import fs from 'fs-extra'
+import { green } from 'picocolors'
 
-type IPreset = string
-
-type IPresetBlock = {
+interface PresetBlock {
   title: string
-  presets: IPreset[]
+  presets: string[]
 }
 
-const eslintPresets: IPreset[] = [
+const eslintPresets = [
   `eslint-config`,
   `eslint-config-vue`,
-  `eslint-config-jest`,
   `eslint-config-typescript`,
-  `eslint-config-prettier`,
   `eslint-config-prettier-vue`,
 ]
 
-const stylelintPresets: IPreset[] = [
+const stylelintPresets = [
   `stylelint-config`,
   `stylelint-config-scss`,
   `stylelint-config-vue`,
@@ -25,9 +21,11 @@ const stylelintPresets: IPreset[] = [
   `stylelint-config-prettier`,
 ]
 
-const prettierPresets: IPreset[] = [`prettier-config`]
+const prettierPresets = [
+  `prettier-config`,
+]
 
-const getPresetBlock = ({ title, presets }: IPresetBlock) =>
+const getPresetBlock = ({ title, presets }: PresetBlock) =>
   [
     `## ${title}`,
     ...presets.map(
@@ -37,30 +35,33 @@ const getPresetBlock = ({ title, presets }: IPresetBlock) =>
     ),
   ].join(`\n\n`)
 
-fs.writeFileSync(
-  `README.md`,
-  fs
-    .readFileSync(`README.md`, `utf-8`)
-    .replace(/<!-- PRESETS START -->[\W\w]*<!-- PRESETS END -->/, () =>
-      [
-        `<!-- PRESETS START -->`,
-        getPresetBlock({
-          title: `ESLint`,
-          presets: eslintPresets,
-        }),
-        getPresetBlock({
-          title: `StyleLint`,
-          presets: stylelintPresets,
-        }),
-        getPresetBlock({
-          title: `Prettier`,
-          presets: prettierPresets,
-        }),
-        `<!-- PRESETS END -->`,
-        console.log(`${green(`README.md`)} updated successfully!`),
-      ]
-        .join(`\n\n`)
-        .trimEnd(),
-    ),
-  `utf-8`,
-)
+async function main () {
+  const readme = await fs.readFile(`README.md`, `utf-8`)
+  const content = readme
+    .replace(/<!-- PRESETS START -->[\W\w]*<!-- PRESETS END -->/, () => [
+    `<!-- PRESETS START -->`,
+    getPresetBlock({
+      title: `ESLint`,
+      presets: eslintPresets,
+    }),
+    getPresetBlock({
+      title: `StyleLint`,
+      presets: stylelintPresets,
+    }),
+    getPresetBlock({
+      title: `Prettier`,
+      presets: prettierPresets,
+    }),
+    `<!-- PRESETS END -->`,
+    ]
+      .join(`\n\n`)
+      .trimEnd())
+  fs.writeFile(`README.md`, content, `utf-8`)
+}
+
+try {
+  main()
+  console.log(`${green(`README.md`)} updated successfully!`)
+} catch (err) {
+  console.log(err)
+}

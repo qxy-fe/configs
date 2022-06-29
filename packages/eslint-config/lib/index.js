@@ -44,18 +44,18 @@ module.exports = {
   },
 
   rules: {
-    'import/newline-after-import': 'error',
+    'import/newline-after-import': `error`,
 
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': [`error`, `always-multiline`],
 
     // es6+
-    'no-var': 'error',
+    'no-var': `error`,
     'prefer-spread': `error`,
     'prefer-template': `error`,
     'prefer-rest-params': `error`,
     'template-curly-spacing': `error`,
     'generator-star-spacing': `off`,
-    quotes: ['error', 'single', {
+    quotes: [`error`, `single`, {
       allowTemplateLiterals: true,
     }],
     'arrow-parens': [`error`, `as-needed`, {
@@ -87,8 +87,8 @@ module.exports = {
 
     // best practices
     eqeqeq: [`error`, `smart`],
-    'max-params': ['error', { max: 5 }],
-    complexity: ['error', { max: 30 }],
+    'max-params': [`error`, { max: 5 }],
+    complexity: [`error`, { max: 30 }],
     'array-callback-return': `error`,
     'block-scoped-var': `error`,
     'consistent-return': `off`,
@@ -103,25 +103,25 @@ module.exports = {
     'require-await': `off`,
     'no-return-assign': `off`,
     'operator-linebreak': [`error`, `before`],
-    'max-depth': ['error', { max: 5 }],
-    'max-nested-callbacks': ['error', { max: 10 }],
-    'max-statements-per-line': ['error', { max: 2 }],
+    'max-depth': [`error`, { max: 5 }],
+    'max-nested-callbacks': [`error`, { max: 10 }],
+    'max-statements-per-line': [`error`, { max: 2 }],
     'no-use-before-define': [`error`, {
       functions: false,
       classes: false,
       variables: true,
     }],
-    'max-lines': ['error', {
+    'max-lines': [`error`, {
       max: 1000,
       skipComments: true,
       skipBlankLines: true,
     }],
-    'max-lines-per-function': ['error', {
+    'max-lines-per-function': [`error`, {
       max: 100,
       skipBlankLines: true,
       skipComments: true,
     }],
-    'max-len': ['error', {
+    'max-len': [`error`, {
       code: 200,
       tabWidth: 2,
       comments: 200,

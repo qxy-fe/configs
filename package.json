@@ -18,21 +18,23 @@
   },
   "prettier": "@qxy/prettier-config",
   "eslintConfig": {
-    "extends": "@qxy",
+    "extends": "@qxy/typescript",
     "root": true
   },
   "dependencies": {
-    "@qxy/eslint-config": "workspace:*",
+    "@qxy/eslint-config-typescript": "workspace:*",
     "@qxy/prettier-config": "workspace:*"
   },
   "devDependencies": {
     "@changesets/cli": "^2.23.0",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
+    "@types/fs-extra": "^9.0.13",
     "eslint": "^8.18.0",
+    "fs-extra": "^10.1.0",
     "husky": "^8.0.1",
-    "kolorist": "^1.5.1",
     "lint-staged": "^13.0.3",
+    "picocolors": "^1.0.0",
     "pnpm": "^7.4.0",
     "prettier": "^2.7.1",
     "sort-package-json": "^1.57.0",

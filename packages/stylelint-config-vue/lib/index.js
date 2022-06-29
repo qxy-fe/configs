@@ -4,7 +4,7 @@ module.exports = {
 
   overrides: [
     {
-      files: ['*.vue', '**/*.vue'],
+      files: [`*.vue`, `**/*.vue`],
 
       customSyntax: `postcss-html`,
 
@@ -17,9 +17,9 @@ module.exports = {
         // Disallow unknown pseudo-element selectors
         'selector-pseudo-element-no-unknown': [true, {
           ignorePseudoElements: [
-            'v-deep',
-            'v-global',
-            'v-slotted',
+            `v-deep`,
+            `v-global`,
+            `v-slotted`,
           ],
         }],
       },
