@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.eslint.fixAll": true
   },
@@ -15,21 +15,6 @@
     "html"
   ],
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false
-  },
-  "[css]": {
-    "editor.formatOnSave": false
-  },
-  "[scss]": {
-    "editor.formatOnSave": false
-  },
-  "[vue]": {
-    "editor.formatOnSave": false
-  },
   "cSpell.words": [
     "bumpp",
     "ependencies",

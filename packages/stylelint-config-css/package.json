@@ -1,5 +1,5 @@
 {
-  "name": "@qxy/stylelint-config-order",
+  "name": "@qxy/stylelint-config-css",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -9,7 +9,7 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-order": "^5.0.0"
+    "stylelint-config-standard": "^26.0.0"
   },
   "publishConfig": {
     "access": "public"
@@ -22,7 +22,6 @@
     }
   ],
   "devDependencies": {
-    "postcss": "^8.4.14",
     "stylelint": "^14.9.1"
   }
 }

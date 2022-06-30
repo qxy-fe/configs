@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@qxy/eslint-config-typescript': workspace:*
+      '@qxy/eslint-config': workspace:*
       bumpp: ^8.2.1
       eslint: ^8.18.0
       husky: ^8.0.1
@@ -13,7 +13,7 @@ importers:
       stylelint: ^14.9.1
       vitest: ^0.16.0
     devDependencies:
-      '@qxy/eslint-config-typescript': link:packages/eslint-config-typescript
+      '@qxy/eslint-config': link:packages/eslint-config
       bumpp: 8.2.1
       eslint: 8.18.0
       husky: 8.0.1
@@ -123,6 +123,21 @@ importers:
 
   packages/stylelint-config:
     specifiers:
+      '@qxy/stylelint-config-order': workspace:*
+      '@qxy/stylelint-config-prettier': workspace:*
+      '@qxy/stylelint-config-scss': workspace:*
+      '@qxy/stylelint-config-vue': workspace:*
+      stylelint: ^14.9.1
+    dependencies:
+      '@qxy/stylelint-config-order': link:../stylelint-config-order
+      '@qxy/stylelint-config-prettier': link:../stylelint-config-prettier
+      '@qxy/stylelint-config-scss': link:../stylelint-config-scss
+      '@qxy/stylelint-config-vue': link:../stylelint-config-vue
+    devDependencies:
+      stylelint: 14.9.1
+
+  packages/stylelint-config-css:
+    specifiers:
       stylelint: ^14.9.1
       stylelint-config-standard: ^26.0.0
     dependencies:
@@ -156,13 +171,13 @@ importers:
 
   packages/stylelint-config-scss:
     specifiers:
-      '@qxy/stylelint-config': workspace:*
+      '@qxy/stylelint-config-css': workspace:*
       postcss: ^8.4.14
       postcss-scss: ^4.0.4
       stylelint: ^14.9.1
       stylelint-scss: ^4.2.0
     dependencies:
-      '@qxy/stylelint-config': link:../stylelint-config
+      '@qxy/stylelint-config-css': link:../stylelint-config-css
       postcss-scss: 4.0.4_postcss@8.4.14
       stylelint-scss: 4.2.0_stylelint@14.9.1
     devDependencies:

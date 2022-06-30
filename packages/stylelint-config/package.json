@@ -1,6 +1,6 @@
 {
   "name": "@qxy/stylelint-config",
-  "version": "0.4.3",
+  "version": "1.0.0",
   "description": "",
   "keywords": [],
   "license": "MIT",
@@ -9,7 +9,10 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-config-standard": "^26.0.0"
+    "@qxy/stylelint-config-order": "workspace:*",
+    "@qxy/stylelint-config-prettier": "workspace:*",
+    "@qxy/stylelint-config-scss": "workspace:*",
+    "@qxy/stylelint-config-vue": "workspace:*"
   },
   "publishConfig": {
     "access": "public"

@@ -10,7 +10,7 @@
     "release": "bumpp package.json packages/*/package.json && pnpm -r publish --access public"
   },
   "devDependencies": {
-    "@qxy/eslint-config-typescript": "workspace:*",
+    "@qxy/eslint-config": "workspace:*",
     "bumpp": "^8.2.1",
     "eslint": "^8.18.0",
     "husky": "^8.0.1",
@@ -23,7 +23,7 @@
     "*.{js,ts,json,md,yaml,yml}": "eslint --fix"
   },
   "eslintConfig": {
-    "extends": "@qxy/typescript",
+    "extends": "@qxy",
     "root": true
   }
 }

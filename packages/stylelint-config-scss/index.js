@@ -2,10 +2,14 @@
  * @see https://github.com/stylelint-scss/stylelint-config-recommended-scss
  */
 
+const css = require(`@qxy/stylelint-config-css`)
+
 module.exports = {
   extends: [
-    `@qxy/stylelint-config`,
+    `@qxy/stylelint-config-css`,
   ],
+
+  ignoreFiles: css.ignoreFiles,
 
   customSyntax: `postcss-scss`,
 

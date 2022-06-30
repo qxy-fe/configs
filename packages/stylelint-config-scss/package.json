@@ -1,6 +1,6 @@
 {
   "name": "@qxy/stylelint-config-scss",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "",
   "keywords": [],
   "license": "MIT",
@@ -9,7 +9,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@qxy/stylelint-config": "workspace:*",
+    "@qxy/stylelint-config-css": "workspace:*",
     "postcss-scss": "^4.0.4",
     "stylelint-scss": "^4.2.0"
   },
