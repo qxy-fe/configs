@@ -5,7 +5,14 @@
   },
   "eslint.validate": [
     "javascript",
-    "typescript"
+    "typescript",
+    "json",
+    "json5",
+    "jsonc",
+    "yaml",
+    "yml",
+    "markdown",
+    "html"
   ],
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "[javascript]": {
@@ -24,7 +31,10 @@
     "editor.formatOnSave": false
   },
   "cSpell.words": [
+    "bumpp",
+    "ependencies",
     "iife",
+    "jsdelivr",
     "kolorist",
     "noopener",
     "noreferrer",

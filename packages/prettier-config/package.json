@@ -1,21 +1,12 @@
 {
   "name": "@qxy/prettier-config",
   "version": "0.3.1",
-  "description": "qxy-fe prettier config",
-  "keywords": [
-    "prettier-config",
-    "qxy-fe"
-  ],
-  "homepage": "https://github.com/qxy-fe/configs#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/qxy-fe/configs.git",
-    "directory": "packages/prettier-config"
-  },
+  "description": "",
+  "keywords": [],
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "index.js",
   "files": [
-    "lib"
+    "index.js"
   ],
   "publishConfig": {
     "access": "public"

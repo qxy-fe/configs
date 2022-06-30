@@ -1,21 +1,12 @@
 {
   "name": "@qxy/stylelint-config",
   "version": "0.4.3",
-  "description": "qxy-fe stylelint config",
-  "keywords": [
-    "stylelint-config",
-    "qxy-fe"
-  ],
-  "homepage": "https://github.com/qxy-fe/configs#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/qxy-fe/configs.git",
-    "directory": "packages/stylelint-config"
-  },
+  "description": "",
+  "keywords": [],
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "index.js",
   "files": [
-    "lib"
+    "index.js"
   ],
   "dependencies": {
     "stylelint-config-standard": "^26.0.0"

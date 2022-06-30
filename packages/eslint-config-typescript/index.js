@@ -1,12 +1,13 @@
 /**
  * ESLint config for TypeScript
- *
  * @see https://typescript-eslint.io/rules
  */
 
+const basic = require(`@qxy/eslint-config-basic`)
+
 module.exports = {
   extends: [
-    `@qxy`,
+    `@qxy/eslint-config-basic`,
     `plugin:import/typescript`,
     `plugin:@typescript-eslint/recommended`,
   ],
@@ -17,9 +18,7 @@ module.exports = {
     },
   },
 
-  plugins: [`@typescript-eslint`],
-
-  parser: `@typescript-eslint/parser`,
+  overrides: basic.overrides,
 
   rules: {
     'import/named': `off`,
@@ -29,7 +28,10 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': [`error`, { 'ts-ignore': `allow-with-description` }],
     '@typescript-eslint/member-delimiter-style': [`error`, { multiline: { delimiter: `none` } }],
     '@typescript-eslint/type-annotation-spacing': [`error`, {}],
-    '@typescript-eslint/consistent-type-imports': [`error`, { prefer: `type-imports`, disallowTypeAnnotations: false }],
+    '@typescript-eslint/consistent-type-imports': [`error`, {
+      prefer: `type-imports`,
+      disallowTypeAnnotations: false,
+    }],
     '@typescript-eslint/consistent-type-definitions': [`error`, `interface`],
     '@typescript-eslint/consistent-indexed-object-style': [`error`, `record`],
     '@typescript-eslint/prefer-ts-expect-error': `error`,
@@ -84,7 +86,10 @@ module.exports = {
     '@typescript-eslint/no-redeclare': `error`,
 
     quotes: `off`,
-    '@typescript-eslint/quotes': [`error`, `backtick`, { avoidEscape: true }],
+    '@typescript-eslint/quotes': [`error`, `single`, {
+      avoidEscape: true,
+      allowTemplateLiterals: true,
+    }],
 
     'no-use-before-define': `off`,
     '@typescript-eslint/no-use-before-define': [`error`, {
@@ -103,6 +108,7 @@ module.exports = {
     '@typescript-eslint/object-curly-spacing': [`error`, `always`],
 
     // OFF
+    '@typescript-eslint/naming-convention': `off`,
     '@typescript-eslint/camelcase': `off`,
     '@typescript-eslint/explicit-function-return-type': `off`,
     '@typescript-eslint/explicit-member-accessibility': `off`,
@@ -116,13 +122,4 @@ module.exports = {
     '@typescript-eslint/ban-types': `off`,
     '@typescript-eslint/no-namespace': `off`,
   },
-
-  overrides: [
-    {
-      files: [`*.js`],
-      rules: {
-        '@typescript-eslint/no-var-requires': `off`,
-      },
-    },
-  ],
 }

@@ -1,22 +1,12 @@
 {
   "name": "@qxy/stylelint-config-prettier",
   "version": "0.1.4",
-  "description": "qxy-fe stylelint config with prettier",
-  "keywords": [
-    "stylelint-config",
-    "qxy-fe",
-    "prettier"
-  ],
-  "homepage": "https://github.com/qxy-fe/configs#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/qxy-fe/configs.git",
-    "directory": "packages/stylelint-config-prettier"
-  },
+  "description": "",
+  "keywords": [],
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "index.js",
   "files": [
-    "lib"
+    "index.js"
   ],
   "dependencies": {
     "stylelint-config-prettier": "^9.0.3",

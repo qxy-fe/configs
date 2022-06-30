@@ -1,54 +1,29 @@
 {
   "name": "root",
+  "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@7.4.0",
   "scripts": {
-    "lint": "eslint packages",
-    "readme": "tsx scripts/gen-readme.ts",
-    "test": "vitest --passWithNoTests"
+    "lint": "eslint .",
+    "prepare": "husky install",
+    "test": "vitest --passWithNoTests",
+    "release": "bumpp package.json packages/*/package.json && pnpm -r publish --access public"
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
+  "devDependencies": {
+    "@qxy/eslint-config-typescript": "workspace:*",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.18.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "pnpm": "^7.4.0",
+    "stylelint": "^14.9.1",
+    "vitest": "^0.16.0"
   },
   "lint-staged": {
-    "*.{js,ts}": "eslint --fix",
-    "*.{json,md}": "prettier --write",
-    "package.json": "sort-package-json"
+    "*.{js,ts,json,md,yaml,yml}": "eslint --fix"
   },
-  "prettier": "@qxy/prettier-config",
   "eslintConfig": {
     "extends": "@qxy/typescript",
     "root": true
-  },
-  "dependencies": {
-    "@qxy/eslint-config-typescript": "workspace:*",
-    "@qxy/prettier-config": "workspace:*"
-  },
-  "devDependencies": {
-    "@changesets/cli": "^2.23.0",
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
-    "@types/fs-extra": "^9.0.13",
-    "eslint": "^8.18.0",
-    "fs-extra": "^10.1.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "picocolors": "^1.0.0",
-    "pnpm": "^7.4.0",
-    "prettier": "^2.7.1",
-    "sort-package-json": "^1.57.0",
-    "stylelint": "^14.9.1",
-    "tsx": "^3.6.0",
-    "vitest": "^0.16.0"
-  },
-  "packageManager": "pnpm@7.4.0",
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "typescript",
-        "postcss"
-      ]
-    }
   }
 }
