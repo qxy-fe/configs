@@ -194,7 +194,7 @@ module.exports = {
       allowTemplateLiterals: true,
     }],
     'prefer-const': [`error`, {
-      destructuring: `any`,
+      destructuring: `all`,
       ignoreReadBeforeAssign: true,
     }],
     'prefer-arrow-callback': [`error`, {

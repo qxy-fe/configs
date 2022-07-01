@@ -22,6 +22,10 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': `off`,
         // Only in Vue SFC
         'vue/prefer-import-from-vue': `error`,
+        '@typescript-eslint/no-this-alias': [`error`, {
+          allowDestructuring: false,
+          allowedNames: [`vm`], // in favor of `this` in data
+        }],
       },
     },
   ],

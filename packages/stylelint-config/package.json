@@ -9,6 +9,7 @@
     "index.js"
   ],
   "dependencies": {
+    "@qxy/stylelint-config-css": "workspace:*",
     "@qxy/stylelint-config-order": "workspace:*",
     "@qxy/stylelint-config-prettier": "workspace:*",
     "@qxy/stylelint-config-scss": "workspace:*",
