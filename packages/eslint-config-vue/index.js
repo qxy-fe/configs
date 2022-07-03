@@ -17,10 +17,6 @@ module.exports = {
         parser: `@typescript-eslint/parser`,
       },
       rules: {
-        'no-undef': `off`,
-        'no-unused-vars': `off`,
-        '@typescript-eslint/no-unused-vars': `off`,
-        // Only in Vue SFC
         'vue/prefer-import-from-vue': `error`,
         '@typescript-eslint/no-this-alias': [`error`, {
           allowDestructuring: false,

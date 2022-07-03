@@ -12,12 +12,12 @@
   "devDependencies": {
     "@qxy/eslint-config": "workspace:*",
     "bumpp": "^8.2.1",
-    "eslint": "^8.18.0",
+    "eslint": "^8.19.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "pnpm": "^7.4.1",
+    "pnpm": "^7.5.0",
     "stylelint": "^14.9.1",
-    "vitest": "^0.16.0"
+    "vitest": "^0.17.0"
   },
   "lint-staged": {
     "*.{js,ts,json,md,yaml,yml}": "eslint --fix"
