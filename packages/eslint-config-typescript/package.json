@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@qxy/eslint-config-basic": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.30.4",
-    "@typescript-eslint/parser": "^5.30.4"
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5"
   },
   "publishConfig": {
     "access": "public"
