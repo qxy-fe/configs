@@ -2,7 +2,7 @@
   "name": "root",
   "version": "1.0.3",
   "private": true,
-  "packageManager": "pnpm@7.5.0",
+  "packageManager": "pnpm@7.6.0",
   "scripts": {
     "lint": "eslint .",
     "prepare": "husky install",

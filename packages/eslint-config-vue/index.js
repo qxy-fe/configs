@@ -33,69 +33,25 @@ module.exports = {
     'vue/require-default-prop': `off`,
     'vue/multi-word-component-names': `off`,
     'vue/no-setup-props-destructure': `off`,
-    // Enable in vue3
+    // TODO: Enable when aim vue3
     'vue/no-multiple-template-root': `off`,
 
-    'vue/prefer-template': `error`,
-    'vue/space-infix-ops': `error`,
-    'vue/no-empty-pattern': `error`,
-    'vue/no-sparse-arrays': `error`,
     'vue/require-prop-types': `error`,
-    'vue/no-loss-of-precision': `error`,
-    'vue/no-irregular-whitespace': `error`,
     'vue/template-curly-spacing': `error`,
-    'vue/comma-style': [`error`, `last`],
-    'vue/eqeqeq': [`error`, `smart`],
-    'vue/space-in-parens': [`error`, `never`],
-    'vue/dot-location': [`error`, `property`],
     'vue/this-in-template': [`error`, `never`],
-    'vue/operator-linebreak': [`error`, `before`],
-    'vue/no-extra-parens': [`error`, `functions`],
-    'vue/object-curly-spacing': [`error`, `always`],
-    'vue/comma-dangle': [`error`, `always-multiline`],
-    'vue/quote-props': [`error`, `consistent-as-needed`],
-    'vue/space-unary-ops': [`error`, {
-      words: true,
-      nonwords: false,
-    }],
-    'vue/dot-notation': [`error`, {
-      allowKeywords: true,
-    }],
-    'vue/brace-style': [`error`, `stroustrup`, {
-      allowSingleLine: true,
-    }],
     'vue/comma-spacing': [`error`, {
       before: false,
       after: true,
     }],
-    'vue/key-spacing': [`error`, {
-      beforeColon: false,
-      afterColon: true,
-    }],
-    'vue/keyword-spacing': [`error`, {
-      before: true,
-      after: true,
-    }],
-    'vue/arrow-spacing': [`error`, {
-      before: true,
-      after: true,
-    }],
-    'vue/object-shorthand': [`error`, `always`, {
-      ignoreConstructors: false,
-      avoidQuotes: true,
-    }],
     'vue/no-static-inline-styles': [`error`, {
       allowBinding: true,
     }],
-    'vue/object-property-newline': [`error`, {
-      allowMultiplePropertiesPerLine: true,
-    }],
-    'vue/object-curly-newline': [`error`, {
-      multiline: true,
-      consistent: true,
-    }],
     'vue/component-tags-order': [`error`, {
       order: [[`template`, `script`], `style`],
+    }],
+    'vue/first-attribute-linebreak': [`error`, {
+      singleline: `beside`,
+      multiline: `below`,
     }],
     'vue/max-attributes-per-line': [`error`, {
       singleline: 1,
@@ -165,33 +121,9 @@ module.exports = {
       ],
     }],
 
-    // ===========================================================
-    // Rules below are uncategorized
-    // ===========================================================
-    'vue/require-name-property': `error`,
-    'vue/no-empty-component-block': `error`,
-    'vue/static-class-names-order': `error`,
-    'vue/no-constant-condition': `error`,
     'vue/prefer-import-from-vue': `error`,
     'vue/no-v-text-v-html-on-component': `error`,
-    'vue/prefer-separate-static-class': `error`,
-    'vue/block-spacing': [`error`, `always`],
-    'vue/v-for-delimiter-style': [`error`, `in`],
-    'vue/next-tick-style': [`error`, `promise`],
-    'vue/array-bracket-spacing': [`error`, `never`],
     'vue/no-restricted-v-bind': [`error`, `/^v-/`],
-    'vue/padding-line-between-blocks': [`error`, `always`],
-    'vue/custom-event-name-casing': [`error`, `camelCase`],
-    'vue/prefer-true-attribute-shorthand': [`error`, `always`],
-    'vue/component-options-name-casing': [`error`, `PascalCase`],
-    'vue/no-restricted-syntax': [`error`,
-      `DebuggerStatement`,
-      `LabeledStatement`,
-      `WithStatement`,
-    ],
-    'vue/define-macros-order': [`error`, {
-      order: [`defineProps`, `defineEmits`],
-    }],
     'vue/block-tag-newline': [`error`, {
       singleline: `always`,
       multiline: `always`,
@@ -201,31 +133,49 @@ module.exports = {
       switchCase: 1,
       ignores: [],
     }],
-    'vue/html-comment-content-spacing': [`error`, `always`, {
-      exceptions: [`-`],
+    'vue/no-template-target-blank': [`error`, {
+      allowReferrer: false,
+      enforceDynamicLinks: `always`,
+    }],
+
+    // ===========================================================
+    // Rules below are uncategorized
+    // ===========================================================
+    'vue/component-name-in-template-casing': [`error`, `kebab-case`, {
+      registeredComponentsOnly: true,
+      ignores: [],
+    }],
+    'vue/component-options-name-casing': [`error`, `PascalCase`],
+    // TODO: change to `camelCase` when aim vue3
+    'vue/custom-event-name-casing': [`error`, `kebab-case`],
+    'vue/define-macros-order': [`error`, {
+      order: [`defineProps`, `defineEmits`],
     }],
     'vue/html-comment-content-newline': [`error`, {
       singleline: `never`,
       multiline: `always`,
     }],
+    'vue/html-comment-content-spacing': [`error`, `always`, {
+      exceptions: [`-`],
+    }],
+    // vue/html-comment-indent
+    'vue/new-line-between-multi-line-property': [`error`, {
+      minLineOfMultilineProperty: 2,
+    }],
+    'vue/next-tick-style': [`error`, `promise`],
+    'vue/no-empty-component-block': `error`,
     'vue/no-potential-component-option-typo': [`error`, {
       presets: [`all`],
       custom: [],
     }],
-    'vue/component-name-in-template-casing': [`error`, `kebab-case`, {
-      registeredComponentsOnly: true,
-      ignores: [],
-    }],
-    'vue/v-on-function-call': [`error`, `never`, {
-      ignoreIncludesComment: true,
-    }],
-    'vue/no-template-target-blank': [`error`, {
-      allowReferrer: false,
-      enforceDynamicLinks: `always`,
-    }],
+    'vue/no-multiple-objects-in-class': `error`,
+    'vue/no-undef-components': `error`,
+    'vue/no-undef-properties': `error`,
     'vue/no-unsupported-features': [`error`, {
       version: `2.6.14`,
     }],
+    'vue/no-unused-properties': `error`,
+    'vue/no-unused-refs': `error`,
     'vue/no-useless-mustaches': [`error`, {
       ignoreIncludesComment: false,
       ignoreStringEscape: false,
@@ -234,11 +184,77 @@ module.exports = {
       ignoreIncludesComment: false,
       ignoreStringEscape: false,
     }],
+    'vue/no-v-text': `error`,
+    'vue/padding-line-between-blocks': [`error`, `always`],
+    'vue/prefer-separate-static-class': `error`,
+    'vue/prefer-true-attribute-shorthand': [`error`, `always`],
     'vue/require-direct-export': [`error`, {
       disallowFunctionalComponentFunction: false,
     }],
-    'vue/new-line-between-multi-line-property': [`error`, {
-      minLineOfMultilineProperty: 2,
+    'vue/require-name-property': `error`,
+    'vue/static-class-names-order': `error`,
+    'vue/v-for-delimiter-style': [`error`, `in`],
+    'vue/v-on-function-call': [`error`, `never`, {
+      ignoreIncludesComment: true,
+    }],
+
+    // ===========================================================
+    // Rules below are extension rules
+    // ===========================================================
+    'vue/array-bracket-spacing': [`error`, `never`],
+    'vue/arrow-spacing': [`error`, {
+      before: true,
+      after: true,
+    }],
+    'vue/block-spacing': [`error`, `always`],
+    'vue/brace-style': [`error`, `stroustrup`, {
+      allowSingleLine: true,
+    }],
+    // vue/camelcase
+    'vue/comma-dangle': [`error`, `always-multiline`],
+    'vue/comma-style': [`error`, `last`],
+    'vue/dot-location': [`error`, `property`],
+    'vue/dot-notation': [`error`, {
+      allowKeywords: true,
+    }],
+    'vue/eqeqeq': [`error`, `smart`],
+    // vue/func-call-spacing
+    'vue/key-spacing': [`error`, {
+      beforeColon: false,
+      afterColon: true,
+    }],
+    'vue/keyword-spacing': [`error`, {
+      before: true,
+      after: true,
+    }],
+    // vue/max-len
+    'vue/no-constant-condition': `error`,
+    'vue/no-empty-pattern': `error`,
+    'vue/no-extra-parens': `error`,
+    'vue/no-irregular-whitespace': `error`,
+    'vue/no-loss-of-precision': `error`,
+    'vue/no-restricted-syntax': [`error`,
+      `DebuggerStatement`,
+      `LabeledStatement`,
+      `WithStatement`,
+    ],
+    'vue/no-sparse-arrays': `error`,
+    // vue/no-useless-concat
+    'vue/object-curly-newline': [`error`, {
+      multiline: true,
+      consistent: true,
+    }],
+    'vue/object-curly-spacing': [`error`, `always`],
+    'vue/object-property-newline': [`error`, {
+      allowMultiplePropertiesPerLine: true,
+    }],
+    // object-shorthand
+    'vue/prefer-template': `error`,
+    'vue/space-in-parens': [`error`, `never`],
+    'vue/space-infix-ops': `error`,
+    'vue/space-unary-ops': [`error`, {
+      words: true,
+      nonwords: false,
     }],
   },
 }
