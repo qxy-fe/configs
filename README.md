@@ -2,7 +2,7 @@
 
 Opinionable & sharable linter configs.
 
-## Usage
+## Install
 
 ```shell
 $ yarn add @qxy/eslint-config  eslint typescript -D
@@ -13,6 +13,8 @@ $ yarn add  @qxy/stylelint-config postcss stylelint -D
 ```
 
 ## Config
+
+Configuration in `package.json`:
 
 **ESLint**
 
@@ -44,4 +46,41 @@ $ yarn add  @qxy/stylelint-config postcss stylelint -D
 }
 ```
 
+## Usage
+
+Run linter with npm scripts:
+
+```json
+{
+  "scripts": {
+    "lint:script": "eslint .",
+    "lint:style": "stylelint \"src/**/*.{vue,scss}\""
+  }
+}
+```
+
+Lint staged files only via `lint-staged`:
+
+```json
+{
+  "lint-staged": {
+    "*.{js,ts,json,vue,html,md,yml,yaml}": "eslint --fix",
+    "*.{css,vue,scss}": "stylelint --fix"
+  }
+}
+```
+
+Auto fix when develop with `VS Code`:
+
+Config in `.vscode/settings.json`
+
+```json
+{
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+```
 
