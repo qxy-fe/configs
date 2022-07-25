@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@qxy/eslint-config-basic": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.30.5",
-    "@typescript-eslint/parser": "^5.30.5"
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7"
   },
   "publishConfig": {
     "access": "public"
@@ -27,7 +27,7 @@
     }
   ],
   "devDependencies": {
-    "eslint": "^8.19.0",
+    "eslint": "^8.20.0",
     "typescript": "^4.7.4"
   }
 }
