@@ -30,6 +30,8 @@ module.exports = {
   rules: {
     // disabled
     'vue/no-v-html': `off`,
+    'vue/no-undef-components': `off`,
+    'vue/no-undef-properties': `off`,
     'vue/require-default-prop': `off`,
     'vue/multi-word-component-names': `off`,
     'vue/no-setup-props-destructure': `off`,
@@ -169,8 +171,6 @@ module.exports = {
       custom: [],
     }],
     'vue/no-multiple-objects-in-class': `error`,
-    'vue/no-undef-components': `error`,
-    'vue/no-undef-properties': `error`,
     'vue/no-unsupported-features': [`error`, {
       version: `2.6.14`,
     }],
