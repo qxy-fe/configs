@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@qxy/eslint-config': workspace:1.0.5
+      '@qxy/eslint-config': workspace:*
       bumpp: ^8.2.1
       conventional-changelog-cli: ^2.2.2
       eslint: ^8.22.0
