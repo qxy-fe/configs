@@ -35,9 +35,9 @@ module.exports = {
     'vue/require-default-prop': `off`,
     'vue/multi-word-component-names': `off`,
     'vue/no-setup-props-destructure': `off`,
+    'vue/no-multiple-template-root': `off`,
 
     'vue/require-prop-types': `error`,
-    'vue/no-multiple-template-root': `error`,
     'vue/template-curly-spacing': `error`,
     'vue/this-in-template': [`error`, `never`],
     'vue/comma-spacing': [`error`, {
@@ -147,7 +147,6 @@ module.exports = {
       ignores: [],
     }],
     'vue/component-options-name-casing': [`error`, `PascalCase`],
-    // TODO: change to `camelCase` when aim vue3
     'vue/custom-event-name-casing': [`error`, `kebab-case`],
     'vue/define-macros-order': [`error`, {
       order: [`defineProps`, `defineEmits`],
@@ -171,7 +170,7 @@ module.exports = {
     }],
     'vue/no-multiple-objects-in-class': `error`,
     'vue/no-unsupported-features': [`error`, {
-      version: `2.6.14`,
+      version: `^3.2.0`,
     }],
     'vue/no-unused-properties': `error`,
     'vue/no-unused-refs': `error`,
