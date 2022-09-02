@@ -6,7 +6,8 @@
   "license": "MIT",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "vue3.js"
   ],
   "dependencies": {
     "@qxy/eslint-config-typescript": "workspace:*",
