@@ -1,3 +1,12 @@
+## [1.0.7](https://github.com/qxy-fe/configs/compare/v1.0.6...v1.0.7) (2022-09-02)
+
+
+### Bug Fixes
+
+* export vue3 ([35575a9](https://github.com/qxy-fe/configs/commit/35575a9e3cdcec73e223a40047f848ab6468164b))
+
+
+
 ## [1.0.6](https://github.com/qxy-fe/configs/compare/v1.0.5...v1.0.6) (2022-08-20)
 
 
