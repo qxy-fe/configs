@@ -9,7 +9,7 @@ $ yarn add @qxy/eslint-config  eslint typescript -D
 
 $ yarn add  @qxy/prettier-config prettier -D
 
-$ yarn add  @qxy/stylelint-config postcss stylelint -D
+$ yarn add  @qxy/stylelint-config @qxy/prettier-config postcss stylelint prettier -D
 ```
 
 ## Config
