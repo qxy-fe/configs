@@ -5,7 +5,7 @@ Opinionable & sharable linter configs.
 ## Install
 
 ```shell
-$ yarn add @qxy/eslint-config  eslint typescript -D
+$ yarn add @qxy/eslint-config eslint typescript -D
 
 $ yarn add  @qxy/prettier-config prettier -D
 
@@ -70,7 +70,7 @@ Lint staged files only via `lint-staged`:
 }
 ```
 
-Auto fix when develop with `VS Code`:
+Auto fix when coding with `VS Code`:
 
 Config in `.vscode/settings.json`
 
