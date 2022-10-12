@@ -1,3 +1,12 @@
+## [1.0.8](https://github.com/qxy-fe/configs/compare/v1.0.7...v1.0.8) (2022-10-12)
+
+
+### Features
+
+* new unicorn rule ([79a15fc](https://github.com/qxy-fe/configs/commit/79a15fcbdc457235aab941e58118386709ae2c28))
+
+
+
 ## [1.0.7](https://github.com/qxy-fe/configs/compare/v1.0.6...v1.0.7) (2022-09-02)
 
 
