@@ -305,7 +305,7 @@ module.exports = {
     // Disallow awaiting non-promise values
     'unicorn/no-unnecessary-await': `error`,
     // Enforce consistent brace style for `case` clauses
-    'unicorn/switch-case-braces': `error`,
+    'unicorn/switch-case-braces': [`error`, `avoid`],
 
     // disabled unicorn
     // Keep regex literals safe!
