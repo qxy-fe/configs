@@ -42,6 +42,9 @@ module.exports = {
     // TODO: ignore background for compatible
     'declaration-block-no-shorthand-property-overrides': null,
 
+    // Specify string or URL notation for `@import` rules
+    'import-notation': null,
+
     // Require a leading zero for fractional numbers less than 1
     'number-leading-zero': `always`,
 
