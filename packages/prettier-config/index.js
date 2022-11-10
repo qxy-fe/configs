@@ -68,6 +68,9 @@ module.exports = {
   // Control whether Prettier formats quoted code embedded in the file
   embeddedLanguageFormatting: `auto`,
 
+  // Enforce single attribute per line in HTML, Vue and JSX
+  singleAttributePerLine: true,
+
   // Overrides for specific language
   overrides: [
     {
@@ -80,11 +83,10 @@ module.exports = {
     },
 
     {
-      files: `*.md`,
+      files: `*.json`,
 
       options: {
-        // Enlarge the indent
-        tabWidth: 4,
+        trailingComma: `none`,
       },
     },
   ],
