@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "@qxy/eslint-config-typescript": "workspace:*",
-    "eslint-plugin-vue": "^9.6.0",
+    "eslint-plugin-vue": "^9.7.0",
     "vue-eslint-parser": "^9.1.0"
   },
   "publishConfig": {
@@ -25,6 +25,6 @@
     }
   ],
   "devDependencies": {
-    "eslint": "^8.26.0"
+    "eslint": "^8.27.0"
   }
 }

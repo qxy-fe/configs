@@ -9,7 +9,7 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-prettier": "^9.0.4",
     "stylelint-prettier": "^2.0.0"
   },
   "publishConfig": {
@@ -24,6 +24,6 @@
   ],
   "devDependencies": {
     "prettier": "^2.7.1",
-    "stylelint": "^14.14.0"
+    "stylelint": "^14.14.1"
   }
 }
