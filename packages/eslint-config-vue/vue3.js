@@ -1,11 +1,11 @@
 /**
- * ESLint config for Vue
+ * ESLint config for Vue3
  * @see https://eslint.vuejs.org/rules
  */
 
 module.exports = {
   extends: [
-    `plugin:vue/recommended`,
+    `plugin:vue/vue3-recommended`,
     `@qxy/eslint-config-typescript`,
   ],
 
@@ -35,7 +35,11 @@ module.exports = {
     'vue/require-default-prop': `off`,
     'vue/multi-word-component-names': `off`,
     'vue/no-setup-props-destructure': `off`,
+
+    // disabled in favor of vue3
+    'vue/no-v-model-argument': `off`,
     'vue/no-multiple-template-root': `off`,
+    'vue/no-custom-modifiers-on-v-model': `off`,
 
     'vue/require-prop-types': `error`,
     'vue/template-curly-spacing': `error`,
@@ -142,10 +146,6 @@ module.exports = {
     // ===========================================================
     // Rules below are uncategorized
     // ===========================================================
-    'vue/component-name-in-template-casing': [`error`, `kebab-case`, {
-      registeredComponentsOnly: true,
-      ignores: [],
-    }],
     'vue/component-options-name-casing': [`error`, `PascalCase`],
     'vue/custom-event-name-casing': [`error`, `kebab-case`],
     'vue/define-macros-order': [`error`, {
@@ -169,9 +169,6 @@ module.exports = {
       custom: [],
     }],
     'vue/no-multiple-objects-in-class': `error`,
-    'vue/no-unsupported-features': [`error`, {
-      version: `^3.2.0`,
-    }],
     'vue/no-unused-properties': `error`,
     'vue/no-unused-refs': `error`,
     'vue/no-useless-mustaches': [`error`, {
@@ -253,6 +250,16 @@ module.exports = {
     'vue/space-unary-ops': [`error`, {
       words: true,
       nonwords: false,
+    }],
+
+    // Defer with vue2
+    'vue/no-unsupported-features': [`error`, {
+      version: `^3.2.0`,
+      ignores: [],
+    }],
+    'vue/component-name-in-template-casing': [`error`, `PascalCase`, {
+      registeredComponentsOnly: true,
+      ignores: [],
     }],
   },
 }

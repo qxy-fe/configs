@@ -27,6 +27,16 @@ Configuration in `package.json`:
 }
 ```
 
+```json5
+// With vue 3 support
+{
+  "eslintConfig": {
+    "root": true,
+    "extends": "@qxy/eslint-config/vue3"
+  }
+}
+```
+
 **Prettier**
 
 ```json
