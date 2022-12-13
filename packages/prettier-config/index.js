@@ -66,7 +66,7 @@ module.exports = {
   endOfLine: `lf`,
 
   // Control whether Prettier formats quoted code embedded in the file
-  embeddedLanguageFormatting: `auto`,
+  embeddedLanguageFormatting: `off`,
 
   // Enforce single attribute per line in HTML, Vue and JSX
   singleAttributePerLine: true,
