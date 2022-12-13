@@ -7,8 +7,8 @@
     "lint": "eslint .",
     "prepare": "husky install",
     "release": "run-s release:version release:publish",
-    "release:version": "bumpp package.json packages/*/package.json",
-    "release:publish": "pnpm -r publish --access public"
+    "release:publish": "pnpm -r publish --access public",
+    "release:version": "bumpp package.json packages/*/package.json"
   },
   "devDependencies": {
     "@qxy/eslint-config": "workspace:*",
