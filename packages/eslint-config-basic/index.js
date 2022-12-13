@@ -112,12 +112,18 @@ module.exports = {
             `optionalDependencies`,
             `devDependencies`,
             `husky`,
+            `prettier`,
+            `nano-staged`,
             `lint-staged`,
             `eslintConfig`,
           ],
         },
         {
           pathPattern: `^(?:dev|peer|optional|bundled)?[Dd]ependencies$`,
+          order: { type: `asc` },
+        },
+        {
+          pathPattern: `^scripts$`,
           order: { type: `asc` },
         }],
       },
@@ -308,6 +314,10 @@ module.exports = {
     'unicorn/no-unnecessary-await': `error`,
     // Enforce consistent brace style for `case` clauses
     'unicorn/switch-case-braces': [`error`, `avoid`],
+    // Disallow comparing `undefined` using `typeof`
+    'unicorn/no-typeof-undefined': `error`,
+    // Prefer using `Set#size` instead of `Array#length`
+    'unicorn/prefer-set-size': `error`,
 
     // disabled unicorn
     // Keep regex literals safe!
