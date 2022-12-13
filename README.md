@@ -69,11 +69,11 @@ Run linter with npm scripts:
 }
 ```
 
-Lint staged files only via `lint-staged`:
+Lint staged files only via `nano-staged`:
 
 ```json
 {
-  "lint-staged": {
+  "nano-staged": {
     "*.{js,ts,json,vue,html,md,yml,yaml}": "eslint --fix",
     "*.{css,vue,scss}": "stylelint --fix"
   }
