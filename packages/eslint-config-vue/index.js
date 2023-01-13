@@ -70,17 +70,21 @@ module.exports = {
     }],
     'vue/attributes-order': [`error`, {
       order: [
-        `EVENTS`, // '@click="functionCall"', 'v-on="event"'
-        `TWO_WAY_BINDING`, // 'v-model'
-        `OTHER_DIRECTIVES`, // 'v-custom-directive'
-        `LIST_RENDERING`, // 'v-for item in items'
-        `CONDITIONALS`, //  'v-if', 'v-show', 'v-cloak'
-        `CONTENT`, // 'v-text', 'v-html'
-        `UNIQUE`, // 'ref', 'key', 'v-slot', 'slot'
-        `DEFINITION`, // 'is', 'v-is'
-        `OTHER_ATTR`, // 'custom-prop="foo"', ':prop="foo"'
-        `RENDER_MODIFIERS`, // 'v-once', 'v-pre'
-        `GLOBAL`, // 'id'
+        `EVENTS`, // `@click="functionCall"`, `v-on="event"`
+        `TWO_WAY_BINDING`, // `v-model`
+        `OTHER_DIRECTIVES`, // `v-custom-directive`
+        `LIST_RENDERING`, // `v-for item in items`
+        `CONDITIONALS`, //  `v-if`, `v-show`, `v-cloak`
+        `CONTENT`, // `v-text`, `v-html`
+        `SLOT`, // `v-slot`, `slot`
+        `UNIQUE`, // `ref`, `key`
+        `DEFINITION`, // `is`, `v-is`
+        `ATTR_DYNAMIC`, // `v-bind:prop="foo"`, `:prop="foo"`
+        // `OTHER_ATTR`, // `custom-prop="foo"`, `:prop="foo"`, `disabled`
+        `RENDER_MODIFIERS`, // `v-once`, `v-pre`
+        `GLOBAL`, // `id`
+        `ATTR_STATIC`, // `prop="foo", `static attributes
+        `ATTR_SHORTHAND_BOOL`, // `disabled`, prop shorthand
       ],
       alphabetical: false,
     }],
@@ -195,6 +199,28 @@ module.exports = {
     'vue/v-for-delimiter-style': [`error`, `in`],
     'vue/v-on-function-call': [`error`, `never`, {
       ignoreIncludesComment: true,
+    }],
+    'vue/padding-lines-in-component-definition': [`error`, {
+      betweenOptions: `always`,
+      withinOption: {
+        emits: {
+          betweenItems: `always`,
+          withinEach: `ignore`,
+        },
+        props: {
+          betweenItems: `always`,
+          withinEach: `ignore`,
+        },
+        methods: {
+          betweenItems: `always`,
+          withinEach: `ignore`,
+        },
+        data: {
+          betweenItems: `ignore`,
+          withinEach: `ignore`,
+        },
+      },
+      groupSingleLineProperties: false,
     }],
 
     // ===========================================================
