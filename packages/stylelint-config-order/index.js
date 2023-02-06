@@ -6,7 +6,7 @@
 
 'use strict'
 
-function trbl (prefix) {
+function trbl(prefix) {
   prefix = prefix ? `${prefix}-` : ``
 
   return [
@@ -18,11 +18,11 @@ function trbl (prefix) {
   ]
 }
 
-function minMax (suffix) {
+function minMax(suffix) {
   return [suffix, `min-${suffix}`, `max-${suffix}`]
 }
 
-function border (infix) {
+function border(infix) {
   infix = infix ? `-${infix}` : ``
 
   return [
@@ -33,7 +33,9 @@ function border (infix) {
   ]
 }
 
-const positioning = [`position`].concat(trbl()).concat([`z-index`])
+const positioning = [`position`]
+  .concat(trbl())
+  .concat([`z-index`])
 
 const flex = [
   `flex`,

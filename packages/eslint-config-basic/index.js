@@ -9,6 +9,8 @@ module.exports = {
     browser: true,
   },
 
+  reportUnusedDisableDirectives: true,
+
   ignorePatterns: [
     `*.min.*`,
     `CHANGELOG.md`,
@@ -32,6 +34,7 @@ module.exports = {
   plugins: [
     `html`,
     `unicorn`,
+    `unused-imports`,
   ],
 
   settings: {
@@ -59,11 +62,13 @@ module.exports = {
         'jsonc/comma-style': [`error`, `last`],
         'jsonc/indent': [`error`, 2],
         'jsonc/key-spacing': [`error`, {
-          beforeColon: false, afterColon: true,
+          beforeColon: false,
+          afterColon: true,
         }],
         'jsonc/no-octal-escape': `error`,
         'jsonc/object-curly-newline': [`error`, {
-          multiline: true, consistent: true,
+          multiline: true,
+          consistent: true,
         }],
         'jsonc/object-curly-spacing': [`error`, `always`],
         'jsonc/object-property-newline': [`error`, {
@@ -90,10 +95,13 @@ module.exports = {
             `version`,
             `private`,
             `packageManager`,
+            `publisher`,
+            `displayName`,
             `description`,
             `keywords`,
             `license`,
             `author`,
+            `homepage`,
             `repository`,
             `funding`,
             `main`,
@@ -104,6 +112,7 @@ module.exports = {
             `exports`,
             `files`,
             `bin`,
+            `icon`,
             `sideEffects`,
             `scripts`,
             `peerDependencies`,
@@ -111,6 +120,11 @@ module.exports = {
             `dependencies`,
             `optionalDependencies`,
             `devDependencies`,
+            `activationEvents`,
+            `contributes`,
+            `categories`,
+            `engines`,
+            `pnpm`,
             `husky`,
             `prettier`,
             `nano-staged`,
@@ -121,6 +135,14 @@ module.exports = {
         {
           pathPattern: `^(?:dev|peer|optional|bundled)?[Dd]ependencies$`,
           order: { type: `asc` },
+        },
+        {
+          pathPattern: '^exports.*$',
+          order: [
+            'types',
+            'require',
+            'import',
+          ],
         },
         {
           pathPattern: `^scripts$`,
@@ -136,9 +158,15 @@ module.exports = {
       },
     },
     {
-      files: [`*.js`],
+      files: [`*.js`, `*.cjs`],
       rules: {
         '@typescript-eslint/no-var-requires': `off`,
+      },
+    },
+    {
+      files: [`*.ts`, `*.tsx`, `*.mts`, `*.cts`],
+      rules: {
+        'no-void': [`error`, { allowAsStatement: true }],
       },
     },
     {
@@ -170,26 +198,18 @@ module.exports = {
         'no-undef': `off`,
         'no-unused-expressions': `off`,
         'no-unused-vars': `off`,
+        'unused-imports/no-unused-imports': `off`,
+        'unused-imports/no-unused-vars': `off`,
       },
     },
   ],
 
   rules: {
-    // common
-    'comma-dangle': [`error`, `always-multiline`],
-    'sort-imports': [`error`, {
-      ignoreCase: false,
-      ignoreDeclarationSort: true,
-      ignoreMemberSort: false,
-      memberSyntaxSortOrder: [`none`, `all`, `multiple`, `single`],
-      allowSeparatedGroups: false,
-    }],
-
     // es6+
-    'no-var': `error`,
+    'no-var': [`error`],
+    'prefer-rest-params': `error`,
     'prefer-spread': `error`,
     'prefer-template': `error`,
-    'prefer-rest-params': `error`,
     'template-curly-spacing': `error`,
     'generator-star-spacing': `off`,
     'no-empty-static-block': `error`,
@@ -231,7 +251,7 @@ module.exports = {
     'array-callback-return': `error`,
     'block-scoped-var': `error`,
     'consistent-return': `off`,
-    'no-alert': `warn`,
+    'no-alert': `error`,
     'no-case-declarations': `error`,
     'no-multi-spaces': `error`,
     'no-multi-str': `error`,
@@ -241,7 +261,9 @@ module.exports = {
     'vars-on-top': `error`,
     'require-await': `off`,
     'no-return-assign': `off`,
+    'one-var': [`error`, `never`],
     'operator-linebreak': [`error`, `before`],
+    'comma-dangle': [`error`, `always-multiline`],
     'max-params': [`error`, { max: 5 }],
     'max-depth': [`error`, { max: 5 }],
     'max-nested-callbacks': [`error`, { max: 10 }],
@@ -271,23 +293,28 @@ module.exports = {
       ignoreTemplateLiterals: true,
       ignoreTrailingComments: true,
     }],
-
-    /**
-     * Plugins
-     */
+    'sort-imports': [`error`, {
+      ignoreCase: false,
+      ignoreDeclarationSort: true,
+      ignoreMemberSort: false,
+      memberSyntaxSortOrder: [`none`, `all`, `multiple`, `single`],
+      allowSeparatedGroups: false,
+    }],
 
     // import
+    'import/no-unresolved': `off`,
+    'import/no-absolute-path': `off`,
+    'import/no-named-as-default-member': `off`,
+
     'import/order': `error`,
     'import/first': `error`,
     'import/no-mutable-exports': `error`,
     'import/newline-after-import': `error`,
 
-    // disabled import
-    'import/no-unresolved': `off`,
-    'import/no-absolute-path': `off`,
-    'import/no-named-as-default-member': `off`,
-
     // unicorn
+    // Keep regex literals safe!
+    'unicorn/no-unsafe-regex': `off`,
+
     // Pass error message when throwing errors
     'unicorn/error-message': `error`,
     // Uppercase regex escapes
@@ -303,7 +330,7 @@ module.exports = {
     // includes over indexOf when checking for existence
     'unicorn/prefer-includes': `error`,
     // String methods startsWith/endsWith instead of more complicated stuff
-    'unicorn/prefer-starts-ends-with': `error`,
+    'unicorn/prefer-string-starts-ends-with': `error`,
     // textContent instead of innerText
     'unicorn/prefer-text-content': `error`,
     // Enforce throwing type error when throwing error while checking typeof
@@ -319,20 +346,25 @@ module.exports = {
     // Prefer using `Set#size` instead of `Array#length`
     'unicorn/prefer-set-size': `error`,
 
-    // disabled unicorn
-    // Keep regex literals safe!
-    'unicorn/no-unsafe-regex': `off`,
-
     // yml
+    'yml/no-empty-document': `off`,
+
     'yml/quotes': [`error`, {
       prefer: `single`,
       avoidEscape: false,
     }],
-    // disabled yml
-    'yml/no-empty-document': `off`,
 
     // n
     'n/no-callback-literal': `off`,
+
+    // unused-imports
+    'unused-imports/no-unused-imports': `error`,
+    'unused-imports/no-unused-vars': [`error`, {
+      vars: `all`,
+      varsIgnorePattern: `^_`,
+      args: `after-used`,
+      argsIgnorePattern: `^_`,
+    }],
 
     // comments
     'eslint-comments/no-unused-disable': `error`,

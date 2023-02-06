@@ -22,17 +22,19 @@ Configuration in `package.json`:
 {
   "eslintConfig": {
     "root": true,
-    "extends": "@qxy/eslint-config"
+    "extends": [
+      "@qxy"
+    ]
   }
 }
 ```
 
-```json5
+```json
 // With vue 3 support
 {
   "eslintConfig": {
     "root": true,
-    "extends": "@qxy/eslint-config/vue3"
+    "extends": "@qxy/vue3"
   }
 }
 ```
@@ -80,16 +82,32 @@ Lint staged files only via `nano-staged`:
 }
 ```
 
-Auto fix when coding with `VS Code`:
+Auto fix when coding with `VSCode`:
 
 Config in `.vscode/settings.json`
 
 ```json
 {
   "prettier.enable": false,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue",
+    "yaml",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "json5"
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
+  },
+  "[javascript][typescript][vue]": {
+    "editor.formatOnSave": false
   }
 }
 ```
