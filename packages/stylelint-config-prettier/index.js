@@ -8,6 +8,6 @@
 
 module.exports = {
   extends: [
-    `stylelint-prettier/recommended`,
+    'stylelint-prettier/recommended',
   ],
 }

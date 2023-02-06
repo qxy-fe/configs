@@ -4,9 +4,9 @@
 
 module.exports = {
   extends: [
-    `@qxy/stylelint-config-scss`,
-    `@qxy/stylelint-config-vue`,
-    `@qxy/stylelint-config-order`,
-    `@qxy/stylelint-config-prettier`,
+    '@qxy/stylelint-config-scss',
+    '@qxy/stylelint-config-vue',
+    '@qxy/stylelint-config-order',
+    '@qxy/stylelint-config-prettier',
   ],
 }
