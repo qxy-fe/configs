@@ -29,12 +29,15 @@ Configuration in `package.json`:
 }
 ```
 
+With vue 3 support
+
 ```json
-// With vue 3 support
 {
   "eslintConfig": {
     "root": true,
-    "extends": "@qxy/vue3"
+    "extends": [
+      "@qxy/vue3"
+    ]
   }
 }
 ```
