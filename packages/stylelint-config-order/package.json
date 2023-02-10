@@ -9,7 +9,7 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-order": "^5.0.0"
+    "stylelint-order": "^6.0.2"
   },
   "publishConfig": {
     "access": "public"
@@ -23,6 +23,6 @@
   ],
   "devDependencies": {
     "postcss": "^8.4.21",
-    "stylelint": "^14.16.1"
+    "stylelint": "^15.0.0"
   }
 }

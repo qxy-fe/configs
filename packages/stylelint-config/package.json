@@ -11,7 +11,6 @@
   "dependencies": {
     "@qxy/stylelint-config-css": "workspace:*",
     "@qxy/stylelint-config-order": "workspace:*",
-    "@qxy/stylelint-config-prettier": "workspace:*",
     "@qxy/stylelint-config-scss": "workspace:*",
     "@qxy/stylelint-config-vue": "workspace:*"
   },
@@ -26,6 +25,6 @@
     }
   ],
   "devDependencies": {
-    "stylelint": "^14.16.1"
+    "stylelint": "^15.0.0"
   }
 }

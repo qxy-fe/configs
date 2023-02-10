@@ -14,35 +14,22 @@ $ yarn add  @qxy/stylelint-config @qxy/prettier-config postcss stylelint prettie
 
 ## Config
 
-Configuration in `package.json`:
-
 **ESLint**
 
-```json
-{
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "@qxy"
-    ]
-  }
-}
-```
-
-With vue 3 support
+Configuration in `.eslintrc.json`:
 
 ```json
 {
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "@qxy/vue3"
-    ]
-  }
+  "root": true,
+  "extends": [
+    "@qxy"
+  ]
 }
 ```
 
 **Prettier**
+
+Configuration in `package.json`:
 
 ```json
 {
@@ -52,11 +39,15 @@ With vue 3 support
 
 **Stylelint**
 
-```json
-{
-  "stylelint": {
-    "root": true,
-    "extends": "@qxy/stylelint-config"
+Configuration in `stylelint.config.cjs`:
+
+```js
+module.exports = {
+  extends: [
+    '@qxy/stylelint-config',
+  ],
+  rules: {
+    // override rules
   }
 }
 ```
@@ -80,7 +71,10 @@ Lint staged files only via `nano-staged`:
 {
   "nano-staged": {
     "*.{js,ts,json,vue,html,md,yml,yaml}": "eslint --fix",
-    "*.{css,vue,scss}": "stylelint --fix"
+    "*.{css,vue,scss}": [
+      "prettier --write",
+      "stylelint --fix"
+    ]
   }
 }
 ```
