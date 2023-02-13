@@ -9,13 +9,17 @@ on:
       - main
 
 jobs:
-  test:
+  check:
+    strategy:
+      matrix:
+        node-version: [14.19.3, 16.x, 18.x]
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 14.19.3
+          node-version: ${{ matrix.node-version }}
       - uses: pnpm/action-setup@v2
 
       - run: pnpm install --frozen-lockfile
