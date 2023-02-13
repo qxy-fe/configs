@@ -14,7 +14,6 @@
     "markdown",
     "html"
   ],
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "cSpell.words": [
     "bumpp",
     "changelogithub",

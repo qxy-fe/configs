@@ -1,5 +1,8 @@
 # configs
 
+[![CI](https://github.com//qxy-fe/configs/workflows/CI/badge.svg)](https://github.com//qxy-fe/configs/actions)
+[![LICENSE](https://img.shields.io/github/license//qxy-fe/configs.svg)](https://github.com//qxy-fe/configs/blob/main/LICENSE)
+
 Opinionable & sharable linter configs.
 
 ## Install
@@ -108,4 +111,3 @@ Config in `.vscode/settings.json`
   }
 }
 ```
-
