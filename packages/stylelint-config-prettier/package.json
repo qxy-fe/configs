@@ -1,5 +1,5 @@
 {
-  "name": "@qxy/stylelint-config",
+  "name": "@qxy/stylelint-config-prettier",
   "version": "1.2.1",
   "description": "",
   "keywords": [],
@@ -9,11 +9,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@qxy/stylelint-config-css": "workspace:*",
-    "@qxy/stylelint-config-order": "workspace:*",
-    "@qxy/stylelint-config-prettier": "workspace:*",
-    "@qxy/stylelint-config-scss": "workspace:*",
-    "@qxy/stylelint-config-vue": "workspace:*"
+    "stylelint-prettier": "^2.0.0"
   },
   "publishConfig": {
     "access": "public"
@@ -26,6 +22,7 @@
     }
   ],
   "devDependencies": {
+    "prettier": "^2.8.4",
     "stylelint": "^15.1.0"
   }
 }

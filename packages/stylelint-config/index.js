@@ -7,5 +7,6 @@ module.exports = {
     '@qxy/stylelint-config-scss',
     '@qxy/stylelint-config-vue',
     '@qxy/stylelint-config-order',
+    '@qxy/stylelint-config-prettier',
   ],
 }
