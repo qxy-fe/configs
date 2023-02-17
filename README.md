@@ -1,7 +1,7 @@
 # configs
 
 [![CI](https://github.com//qxy-fe/configs/workflows/CI/badge.svg)](https://github.com//qxy-fe/configs/actions)
-[![LICENSE](https://img.shields.io/github/license//qxy-fe/configs.svg)](https://github.com//qxy-fe/configs/blob/main/LICENSE)
+[![LICENSE](https://img.shields.io/github/license/qxy-fe/configs.svg)](https://github.com/qxy-fe/configs/blob/main/LICENSE)
 
 Opinionable & sharable linter configs.
 
@@ -84,7 +84,7 @@ Lint staged files only via `nano-staged`:
 
 Auto fix when coding with `VSCode`:
 
-Config in `.vscode/settings.json`
+Configuration in `.vscode/settings.json`
 
 ```json
 {
