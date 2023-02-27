@@ -14,7 +14,7 @@
   "devDependencies": {
     "@qxy/eslint-config": "workspace:*",
     "@types/node": "^18.13.0",
-    "bumpp": "^8.2.1",
+    "bumpp": "^9.0.0",
     "eslint": "^8.34.0",
     "husky": "^8.0.3",
     "nano-staged": "^0.8.0",
