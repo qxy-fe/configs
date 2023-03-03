@@ -74,10 +74,7 @@ Lint staged files only via `nano-staged`:
 {
   "nano-staged": {
     "*.{js,ts,json,vue,html,md,yml,yaml}": "eslint --fix",
-    "*.{css,vue,scss}": [
-      "prettier --write",
-      "stylelint --fix"
-    ]
+    "*.{css,vue,scss}": "stylelint --fix"
   }
 }
 ```
@@ -91,17 +88,17 @@ Configuration in `.vscode/settings.json`
   "prettier.enable": false,
   "editor.formatOnSave": true,
   "eslint.validate": [
-    "javascript",
-    "typescript",
-    "javascriptreact",
-    "typescriptreact",
     "vue",
     "yaml",
     "html",
-    "markdown",
     "json",
     "jsonc",
-    "json5"
+    "json5",
+    "markdown",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true

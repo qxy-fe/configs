@@ -4,15 +4,15 @@
     "source.eslint.fixAll": true
   },
   "eslint.validate": [
-    "javascript",
-    "typescript",
+    "yml",
+    "yaml",
+    "html",
     "json",
     "json5",
     "jsonc",
-    "yaml",
-    "yml",
     "markdown",
-    "html"
+    "javascript",
+    "typescript"
   ],
   "cSpell.words": [
     "bumpp",
