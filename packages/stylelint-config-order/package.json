@@ -9,7 +9,7 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-order": "^6.0.2"
+    "stylelint-order": "^6.0.3"
   },
   "publishConfig": {
     "access": "public"
