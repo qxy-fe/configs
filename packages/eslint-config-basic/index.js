@@ -306,10 +306,25 @@ module.exports = {
     'import/no-absolute-path': 'off',
     'import/no-named-as-default-member': 'off',
 
-    'import/order': 'error',
     'import/first': 'error',
+    'import/no-duplicates': 'error',
     'import/no-mutable-exports': 'error',
     'import/newline-after-import': 'error',
+    'import/order': ['error', {
+      groups: [
+        'builtin',
+        'external',
+        'internal',
+        'parent',
+        'sibling',
+        'index',
+        'object',
+        'type',
+      ],
+      'newlines-between': 'never',
+      pathGroups: [{ pattern: '@/**', group: 'internal' }],
+      pathGroupsExcludedImportTypes: ['type'],
+    }],
 
     // unicorn
     // Keep regex literals safe!
