@@ -9,7 +9,7 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-config-standard": "^30.0.1"
+    "stylelint-config-standard": "^31.0.0"
   },
   "publishConfig": {
     "access": "public"
