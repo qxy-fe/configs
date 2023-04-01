@@ -26,6 +26,6 @@
     }
   ],
   "devDependencies": {
-    "stylelint": "^15.3.0"
+    "stylelint": "^15.4.0"
   }
 }
