@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.eslint.fixAll": true
   },
@@ -14,10 +14,14 @@
     "javascript",
     "typescript"
   ],
+  "[javascript][typescript][vue]": {
+    "editor.formatOnSave": false
+  },
   "cSpell.words": [
     "bumpp",
     "changelogithub",
     "ependencies",
+    "esbenp",
     "iife",
     "jsdelivr",
     "kolorist",
@@ -33,5 +37,6 @@
     "vitepress",
     "vitest",
     "vuepress"
-  ]
+  ],
+  "cSpell.allowCompoundWords": true
 }

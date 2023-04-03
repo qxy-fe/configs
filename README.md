@@ -7,12 +7,22 @@ Opinionable & sharable linter configs.
 
 ## Install
 
-```shell
-$ yarn add @qxy/eslint-config eslint typescript -D
+Install eslint and peers:
 
-$ yarn add  @qxy/prettier-config prettier -D
+```bash
+yarn add @qxy/eslint-config eslint typescript -D
+```
 
-$ yarn add  @qxy/stylelint-config @qxy/prettier-config postcss stylelint prettier -D
+Install prettier and peers:
+
+```bash
+yarn add  @qxy/prettier-config prettier -D
+```
+
+Install stylelint and peers:
+
+```bash
+yarn add  @qxy/stylelint-config @qxy/prettier-config postcss stylelint prettier -D
 ```
 
 ## Config
@@ -68,6 +78,8 @@ Run linter with npm scripts:
 }
 ```
 
+Use `yarn lint:script --fix` and `yarn lint:style --fix` to autofix fixable problems.
+
 Lint staged files only via `nano-staged`:
 
 ```json
@@ -85,8 +97,9 @@ Configuration in `.vscode/settings.json`
 
 ```json
 {
-  "prettier.enable": false,
+  "prettier.enable": true,
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.validate": [
     "vue",
     "yaml",
@@ -108,3 +121,15 @@ Configuration in `.vscode/settings.json`
   }
 }
 ```
+
+## Support
+
+For now, node versions >=14.19.3 are still being tested.
+
+It will end at [30 Apr 2023](https://endoflife.date/nodejs).
+
+Please upgrade to Node >=16.14 as soon as possible.
+
+## License
+
+[MIT](./LICENSE) License © 2020-PRESENT [qxy-fe](https://github.com/qxy-fe)
