@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - uses: pnpm/action-setup@v2
+        # TODO: Remove until no longer support node <= 16.14
+        with:
+          version: 7.30.5
 
       - run: pnpm install --frozen-lockfile
       - run: pnpm run lint
