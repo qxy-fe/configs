@@ -46,6 +46,12 @@ module.exports = {
     // Disallow shorthand properties that override related longhand properties
     // TODO: ignore background for compatible
     'declaration-block-no-shorthand-property-overrides': null,
+    'declaration-block-no-redundant-longhand-properties': [
+      true,
+      {
+        ignoreShorthands: ['inset'],
+      },
+    ],
 
     /**
      * Selector
@@ -61,6 +67,7 @@ module.exports = {
     /**
      * At-rule
      */
+    'media-feature-range-notation': 'prefix',
 
     // Require or disallow an empty line before at-rules
     'at-rule-empty-line-before': ['always', {
