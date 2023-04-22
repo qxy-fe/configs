@@ -3,7 +3,5 @@
  */
 
 module.exports = {
-  extends: [
-    '@qxy/eslint-config-vue',
-  ],
+  extends: ['@qxy/eslint-config-vue'],
 }

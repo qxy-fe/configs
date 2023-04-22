@@ -34,9 +34,7 @@ Configuration in `.eslintrc.json`:
 ```json
 {
   "root": true,
-  "extends": [
-    "@qxy"
-  ]
+  "extends": ["@qxy"]
 }
 ```
 
@@ -56,12 +54,10 @@ Configuration in `stylelint.config.cjs`:
 
 ```js
 module.exports = {
-  extends: [
-    '@qxy/stylelint-config',
-  ],
+  extends: ['@qxy/stylelint-config'],
   rules: {
     // override rules
-  }
+  },
 }
 ```
 

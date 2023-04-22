@@ -26,25 +26,10 @@ function minMax(suffix) {
 function border(infix) {
   infix = infix ? `-${infix}` : ''
 
-  return [
-    `border${infix}`,
-    `border${infix}-width`,
-    `border${infix}-style`,
-    `border${infix}-color`,
-  ]
+  return [`border${infix}`, `border${infix}-width`, `border${infix}-style`, `border${infix}-color`]
 }
 
-const positioning = [
-  'position',
-
-  'inset',
-  'inset-block',
-  'inset-inline',
-
-  ...trbl(),
-
-  'z-index',
-]
+const positioning = ['position', 'inset', 'inset-block', 'inset-inline', ...trbl(), 'z-index']
 
 const flex = [
   'flex',
@@ -81,11 +66,7 @@ const grid = [
   'grid-column-gap',
 ]
 
-const gap = [
-  'gap',
-  'row-gap',
-  'column-gap',
-]
+const gap = ['gap', 'row-gap', 'column-gap']
 
 const align = [
   'place-content',
@@ -289,13 +270,7 @@ const transformAndAnimation = [
   'appearance',
 ]
 
-const table = [
-  'table-layout',
-  'empty-cells',
-  'caption-side',
-  'border-spacing',
-  'border-collapse',
-]
+const table = ['table-layout', 'empty-cells', 'caption-side', 'border-spacing', 'border-collapse']
 
 const visual = [
   'list-style',
@@ -364,7 +339,8 @@ const visual = [
   'speak-as',
 ]
 
-const svg = ['alignment-baseline',
+const svg = [
+  'alignment-baseline',
   'baseline-shift',
   'dominant-baseline',
   'text-anchor',
@@ -452,9 +428,7 @@ const atRules = [
 ]
 
 module.exports = {
-  plugins: [
-    'stylelint-order',
-  ],
+  plugins: ['stylelint-order'],
 
   rules: {
     'order/order': [

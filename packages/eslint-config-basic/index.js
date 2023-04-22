@@ -31,11 +31,7 @@ module.exports = {
     '!.vscode',
   ],
 
-  plugins: [
-    'html',
-    'unicorn',
-    'unused-imports',
-  ],
+  plugins: ['html', 'unicorn', 'unused-imports'],
 
   settings: {
     'import/resolver': {
@@ -61,19 +57,28 @@ module.exports = {
         'jsonc/comma-dangle': ['error', 'never'],
         'jsonc/comma-style': ['error', 'last'],
         'jsonc/indent': ['error', 2],
-        'jsonc/key-spacing': ['error', {
-          beforeColon: false,
-          afterColon: true,
-        }],
+        'jsonc/key-spacing': [
+          'error',
+          {
+            beforeColon: false,
+            afterColon: true,
+          },
+        ],
         'jsonc/no-octal-escape': 'error',
-        'jsonc/object-curly-newline': ['error', {
-          multiline: true,
-          consistent: true,
-        }],
+        'jsonc/object-curly-newline': [
+          'error',
+          {
+            multiline: true,
+            consistent: true,
+          },
+        ],
         'jsonc/object-curly-spacing': ['error', 'always'],
-        'jsonc/object-property-newline': ['error', {
-          allowMultiplePropertiesPerLine: true,
-        }],
+        'jsonc/object-property-newline': [
+          'error',
+          {
+            allowMultiplePropertiesPerLine: true,
+          },
+        ],
       },
     },
     {
@@ -87,71 +92,70 @@ module.exports = {
       files: ['package.json'],
       parser: 'jsonc-eslint-parser',
       rules: {
-        'jsonc/sort-keys': ['error', {
-          pathPattern: '^$',
-          order: [
-            'publisher',
-            'name',
-            'displayName',
-            'type',
-            'version',
-            'private',
-            'packageManager',
-            'description',
-            'keywords',
-            'license',
-            'author',
-            'homepage',
-            'repository',
-            'funding',
-            'exports',
-            'main',
-            'module',
-            'unpkg',
-            'jsdelivr',
-            // workaround for `type: "module"` with TS `moduleResolution: "node16"`
-            'types',
-            'typesVersions',
-            'bin',
-            'icon',
-            'files',
-            'sideEffects',
-            'scripts',
-            'peerDependencies',
-            'peerDependenciesMeta',
-            'dependencies',
-            'optionalDependencies',
-            'devDependencies',
-            'activationEvents',
-            'contributes',
-            'categories',
-            'engines',
-            'pnpm',
-            'overrides',
-            'resolutions',
-            'husky',
-            'prettier',
-            'nano-staged',
-            'lint-staged',
-            'eslintConfig',
-          ],
-        },
-        {
-          pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
-          order: { type: 'asc' },
-        },
-        {
-          pathPattern: '^exports.*$',
-          order: [
-            'types',
-            'require',
-            'import',
-          ],
-        },
-        {
-          pathPattern: '^scripts$',
-          order: { type: 'asc' },
-        }],
+        'jsonc/sort-keys': [
+          'error',
+          {
+            pathPattern: '^$',
+            order: [
+              'publisher',
+              'name',
+              'displayName',
+              'type',
+              'version',
+              'private',
+              'packageManager',
+              'description',
+              'keywords',
+              'license',
+              'author',
+              'homepage',
+              'repository',
+              'funding',
+              'exports',
+              'main',
+              'module',
+              'unpkg',
+              'jsdelivr',
+              // workaround for `type: "module"` with TS `moduleResolution: "node16"`
+              'types',
+              'typesVersions',
+              'bin',
+              'icon',
+              'files',
+              'sideEffects',
+              'scripts',
+              'peerDependencies',
+              'peerDependenciesMeta',
+              'dependencies',
+              'optionalDependencies',
+              'devDependencies',
+              'activationEvents',
+              'contributes',
+              'categories',
+              'engines',
+              'pnpm',
+              'overrides',
+              'resolutions',
+              'husky',
+              'prettier',
+              'nano-staged',
+              'lint-staged',
+              'eslintConfig',
+            ],
+          },
+          {
+            pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
+            order: { type: 'asc' },
+          },
+          {
+            pathPattern: '^exports.*$',
+            order: ['types', 'require', 'import'],
+          },
+          {
+            pathPattern: '^scripts$',
+            order: { type: 'asc' },
+          },
+        ],
       },
     },
     {
@@ -218,36 +222,58 @@ module.exports = {
     'generator-star-spacing': 'off',
     'no-empty-static-block': 'error',
     'no-new-native-nonconstructor': 'error',
-    'arrow-parens': ['error', 'as-needed', {
-      requireForBlockBody: false,
-    }],
-    quotes: ['error', 'single', {
-      avoidEscape: true,
-      allowTemplateLiterals: false,
-    }],
-    'prefer-const': ['error', {
-      destructuring: 'all',
-      ignoreReadBeforeAssign: true,
-    }],
-    'prefer-arrow-callback': ['error', {
-      allowNamedFunctions: false,
-      allowUnboundThis: true,
-    }],
-    'object-shorthand': ['error', 'always', {
-      ignoreConstructors: false,
-      avoidQuotes: true,
-    }],
-    'spaced-comment': ['error', 'always', {
-      line: {
-        markers: ['/'],
-        exceptions: ['/', '#'],
+    'arrow-parens': [
+      'error',
+      'as-needed',
+      {
+        requireForBlockBody: false,
       },
-      block: {
-        markers: ['!'],
-        exceptions: ['*'],
-        balanced: true,
+    ],
+    quotes: [
+      'error',
+      'single',
+      {
+        avoidEscape: true,
+        allowTemplateLiterals: false,
       },
-    }],
+    ],
+    'prefer-const': [
+      'error',
+      {
+        destructuring: 'all',
+        ignoreReadBeforeAssign: true,
+      },
+    ],
+    'prefer-arrow-callback': [
+      'error',
+      {
+        allowNamedFunctions: false,
+        allowUnboundThis: true,
+      },
+    ],
+    'object-shorthand': [
+      'error',
+      'always',
+      {
+        ignoreConstructors: false,
+        avoidQuotes: true,
+      },
+    ],
+    'spaced-comment': [
+      'error',
+      'always',
+      {
+        line: {
+          markers: ['/'],
+          exceptions: ['/', '#'],
+        },
+        block: {
+          markers: ['!'],
+          exceptions: ['*'],
+          balanced: true,
+        },
+      },
+    ],
 
     // best-practice
     eqeqeq: ['error', 'smart'],
@@ -272,38 +298,53 @@ module.exports = {
     'max-depth': ['error', { max: 5 }],
     'max-nested-callbacks': ['error', { max: 10 }],
     'max-statements-per-line': ['error', { max: 2 }],
-    'max-lines': ['error', {
-      max: 1000,
-      skipComments: true,
-      skipBlankLines: true,
-    }],
-    'max-lines-per-function': ['error', {
-      max: 100,
-      skipComments: true,
-      skipBlankLines: true,
-    }],
-    'no-use-before-define': ['error', {
-      functions: false,
-      classes: false,
-      variables: true,
-    }],
-    'max-len': ['error', {
-      code: 200,
-      tabWidth: 2,
-      comments: 200,
-      ignoreUrls: true,
-      ignoreStrings: true,
-      ignoreRegExpLiterals: true,
-      ignoreTemplateLiterals: true,
-      ignoreTrailingComments: true,
-    }],
-    'sort-imports': ['error', {
-      ignoreCase: false,
-      ignoreDeclarationSort: true,
-      ignoreMemberSort: false,
-      memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-      allowSeparatedGroups: false,
-    }],
+    'max-lines': [
+      'error',
+      {
+        max: 1000,
+        skipComments: true,
+        skipBlankLines: true,
+      },
+    ],
+    'max-lines-per-function': [
+      'error',
+      {
+        max: 100,
+        skipComments: true,
+        skipBlankLines: true,
+      },
+    ],
+    'no-use-before-define': [
+      'error',
+      {
+        functions: false,
+        classes: false,
+        variables: true,
+      },
+    ],
+    'max-len': [
+      'error',
+      {
+        code: 200,
+        tabWidth: 2,
+        comments: 200,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreRegExpLiterals: true,
+        ignoreTemplateLiterals: true,
+        ignoreTrailingComments: true,
+      },
+    ],
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+        allowSeparatedGroups: false,
+      },
+    ],
 
     // import
     'import/no-unresolved': 'off',
@@ -314,21 +355,15 @@ module.exports = {
     'import/no-duplicates': 'error',
     'import/no-mutable-exports': 'error',
     'import/newline-after-import': 'error',
-    'import/order': ['error', {
-      groups: [
-        'builtin',
-        'external',
-        'internal',
-        'parent',
-        'sibling',
-        'index',
-        'object',
-        'type',
-      ],
-      'newlines-between': 'never',
-      pathGroups: [{ pattern: '@/**', group: 'internal' }],
-      pathGroupsExcludedImportTypes: ['type'],
-    }],
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
+        'newlines-between': 'never',
+        pathGroups: [{ pattern: '@/**', group: 'internal' }],
+        pathGroupsExcludedImportTypes: ['type'],
+      },
+    ],
 
     // unicorn
     // Keep regex literals safe!
@@ -393,22 +428,28 @@ module.exports = {
     // yml
     'yml/no-empty-document': 'off',
 
-    'yml/quotes': ['error', {
-      prefer: 'single',
-      avoidEscape: false,
-    }],
+    'yml/quotes': [
+      'error',
+      {
+        prefer: 'single',
+        avoidEscape: false,
+      },
+    ],
 
     // n
     'n/no-callback-literal': 'off',
 
     // unused-imports
     'unused-imports/no-unused-imports': 'error',
-    'unused-imports/no-unused-vars': ['error', {
-      vars: 'all',
-      varsIgnorePattern: '^_',
-      args: 'after-used',
-      argsIgnorePattern: '^_',
-    }],
+    'unused-imports/no-unused-vars': [
+      'error',
+      {
+        vars: 'all',
+        varsIgnorePattern: '^_',
+        args: 'after-used',
+        argsIgnorePattern: '^_',
+      },
+    ],
 
     // comments
     'eslint-comments/no-unused-disable': 'error',

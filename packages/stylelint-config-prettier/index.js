@@ -7,9 +7,7 @@
 'use strict'
 
 module.exports = {
-  plugins: [
-    'stylelint-prettier',
-  ],
+  plugins: ['stylelint-prettier'],
   rules: {
     // use prettier along with stylelint
     'prettier/prettier': true,

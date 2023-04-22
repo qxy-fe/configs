@@ -6,17 +6,13 @@
 const css = require('@qxy/stylelint-config-css')
 
 module.exports = {
-  extends: [
-    '@qxy/stylelint-config-css',
-  ],
+  extends: ['@qxy/stylelint-config-css'],
 
   ignoreFiles: css.ignoreFiles,
 
   customSyntax: 'postcss-scss',
 
-  plugins: [
-    'stylelint-scss',
-  ],
+  plugins: ['stylelint-scss'],
 
   rules: {
     // Disabled rules in favor of SCSS
@@ -25,18 +21,18 @@ module.exports = {
     'function-no-unknown': null,
 
     // Overrides rules in favor of SCSS
-    'annotation-no-unknown': [true, {
-      ignoreAnnotations: [
-        'default',
-        'global',
-      ],
-    }],
-    'no-invalid-position-at-import-rule': [true, {
-      ignoreAtRules: [
-        'use',
-        'forward',
-      ],
-    }],
+    'annotation-no-unknown': [
+      true,
+      {
+        ignoreAnnotations: ['default', 'global'],
+      },
+    ],
+    'no-invalid-position-at-import-rule': [
+      true,
+      {
+        ignoreAtRules: ['use', 'forward'],
+      },
+    ],
 
     // =============================== //
     // SCSS Rules //
@@ -73,9 +69,12 @@ module.exports = {
     // Require or disallow a space before @function parentheses
     'scss/at-function-parentheses-space-before': 'never',
     // Specify a pattern for Sass/SCSS-like function names
-    'scss/at-function-pattern': ['^(-?[a-z][a-z0-9]*)(-[a-z0-9]+)*$', {
-      message: 'Expected function name to be kebab-case',
-    }],
+    'scss/at-function-pattern': [
+      '^(-?[a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+      {
+        message: 'Expected function name to be kebab-case',
+      },
+    ],
 
     /**
      * @-if
@@ -100,9 +99,12 @@ module.exports = {
      */
 
     // Specify a pattern for Sass/SCSS-like mixin names
-    'scss/at-mixin-pattern': ['^(-?[a-z][a-z0-9]*)(-[a-z0-9]+)*$', {
-      message: 'Expected mixin name to be kebab-case',
-    }],
+    'scss/at-mixin-pattern': [
+      '^(-?[a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+      {
+        message: 'Expected mixin name to be kebab-case',
+      },
+    ],
 
     /**
      * @-rule
@@ -126,16 +128,22 @@ module.exports = {
     // Disallow whitespace before the colon in $-variable declarations
     'scss/dollar-variable-colon-space-before': 'never',
     // Specify a pattern for Sass-like variables
-    'scss/dollar-variable-pattern': ['^([a-z][a-z0-9]*)(-[a-z0-9]+)*$', {
-      message: 'Expected variable to be kebab-case',
-    }],
+    'scss/dollar-variable-pattern': [
+      '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+      {
+        message: 'Expected variable to be kebab-case',
+      },
+    ],
     // Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers
     'scss/dollar-variable-no-missing-interpolation': true,
     // Require a single empty line or disallow empty lines before $-variable declarations
-    'scss/dollar-variable-empty-line-before': ['always', {
-      except: ['after-dollar-variable', 'first-nested'],
-      ignore: ['after-comment', 'inside-single-line-block'],
-    }],
+    'scss/dollar-variable-empty-line-before': [
+      'always',
+      {
+        except: ['after-dollar-variable', 'first-nested'],
+        ignore: ['after-comment', 'inside-single-line-block'],
+      },
+    ],
 
     /**
      * %-placeholder
@@ -150,10 +158,13 @@ module.exports = {
     // Require whitespace after the // in //-comments
     'scss/double-slash-comment-whitespace-inside': 'always',
     // Require or disallow an empty line before //-comments
-    'scss/double-slash-comment-empty-line-before': ['always', {
-      except: ['first-nested'],
-      ignore: ['between-comments', 'stylelint-commands'],
-    }],
+    'scss/double-slash-comment-empty-line-before': [
+      'always',
+      {
+        except: ['first-nested'],
+        ignore: ['between-comments', 'stylelint-commands'],
+      },
+    ],
 
     /**
      * Comment

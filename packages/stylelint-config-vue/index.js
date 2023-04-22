@@ -1,4 +1,3 @@
-
 module.exports = {
   rules: {},
 
@@ -10,18 +9,20 @@ module.exports = {
 
       rules: {
         // Disallow unknown pseudo-class selectors
-        'selector-pseudo-class-no-unknown': [true, {
-          ignorePseudoClasses: ['deep', 'global'],
-        }],
+        'selector-pseudo-class-no-unknown': [
+          true,
+          {
+            ignorePseudoClasses: ['deep', 'global'],
+          },
+        ],
 
         // Disallow unknown pseudo-element selectors
-        'selector-pseudo-element-no-unknown': [true, {
-          ignorePseudoElements: [
-            'v-deep',
-            'v-global',
-            'v-slotted',
-          ],
-        }],
+        'selector-pseudo-element-no-unknown': [
+          true,
+          {
+            ignorePseudoElements: ['v-deep', 'v-global', 'v-slotted'],
+          },
+        ],
       },
     },
   ],

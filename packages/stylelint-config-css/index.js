@@ -4,34 +4,30 @@
  */
 
 module.exports = {
-  extends: [
-    'stylelint-config-standard',
-  ],
+  extends: ['stylelint-config-standard'],
 
   // Globs to ignore specific files
-  ignoreFiles: [
-    '*.min.css',
-    '*.min.scss',
-    'node_modules',
-    'dist',
-    'output',
-    'coverage',
-    'public',
-  ],
+  ignoreFiles: ['*.min.css', '*.min.scss', 'node_modules', 'dist', 'output', 'coverage', 'public'],
 
   rules: {
     // Specify lowercase or uppercase for keywords values
-    'value-keyword-case': ['lower', {
-      ignoreProperties: [/^\$?font/],
-    }],
+    'value-keyword-case': [
+      'lower',
+      {
+        ignoreProperties: [/^\$?font/],
+      },
+    ],
 
     // Specify string or URL notation for `@import` rules
     'import-notation': null,
 
     // Disallow selectors of lower specificity from coming after overriding selectors of higher specificity
-    'no-descending-specificity': [true, {
-      ignore: ['selectors-within-list'],
-    }],
+    'no-descending-specificity': [
+      true,
+      {
+        ignore: ['selectors-within-list'],
+      },
+    ],
 
     // Specify percentage or number notation for alpha-values
     'alpha-value-notation': 'number',
@@ -70,10 +66,13 @@ module.exports = {
     'media-feature-range-notation': 'prefix',
 
     // Require or disallow an empty line before at-rules
-    'at-rule-empty-line-before': ['always', {
-      except: ['inside-block', 'blockless-after-same-name-blockless'],
-      ignore: ['first-nested', 'after-comment'],
-      ignoreAtRules: ['import', 'else'],
-    }],
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        except: ['inside-block', 'blockless-after-same-name-blockless'],
+        ignore: ['first-nested', 'after-comment'],
+        ignoreAtRules: ['import', 'else'],
+      },
+    ],
   },
 }

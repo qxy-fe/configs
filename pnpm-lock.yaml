@@ -7,6 +7,9 @@ importers:
       '@qxy/eslint-config':
         specifier: workspace:*
         version: link:packages/eslint-config
+      '@qxy/prettier-config':
+        specifier: workspace:*
+        version: link:packages/prettier-config
       '@types/node':
         specifier: ^18.15.13
         version: 18.15.13
@@ -28,6 +31,9 @@ importers:
       pnpm:
         specifier: ^8.3.1
         version: 8.3.1
+      prettier:
+        specifier: ^2.8.7
+        version: 2.8.7
       stylelint:
         specifier: ^15.5.0
         version: 15.5.0
