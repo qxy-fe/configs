@@ -73,16 +73,4 @@ module.exports = {
 
   // Enforce single attribute per line in HTML, Vue and JSX
   singleAttributePerLine: true,
-
-  // Overrides for specific language
-  overrides: [
-    {
-      files: ['*.css', '*.scss', '*.less'],
-
-      options: {
-        // Double quotes for CSS and its processor
-        singleQuote: false,
-      },
-    },
-  ],
 }
