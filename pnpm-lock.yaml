@@ -243,8 +243,8 @@ importers:
         specifier: ^4.0.6
         version: 4.0.6(postcss@8.4.23)
       stylelint-scss:
-        specifier: ^4.7.0
-        version: 4.7.0(stylelint@15.6.1)
+        specifier: ^5.0.0
+        version: 5.0.0(stylelint@15.6.1)
     devDependencies:
       postcss:
         specifier: ^8.4.23
@@ -3258,8 +3258,8 @@ packages:
       stylelint: 15.6.1
     dev: false
 
-  /stylelint-scss@4.7.0(stylelint@15.6.1):
-    resolution: {integrity: sha512-TSUgIeS0H3jqDZnby1UO1Qv3poi1N8wUYIJY6D1tuUq2MN3lwp/rITVo0wD+1SWTmRm0tNmGO0b7nKInnqF6Hg==}
+  /stylelint-scss@5.0.0(stylelint@15.6.1):
+    resolution: {integrity: sha512-5Ee5kG3JIcP2jk2PMoFMiNmW/815V+wK5o37X5ke90ihWMpPXI9iyqeA6zEWipWSRXeQc0kqbd7hKqiR+wPKNA==}
     peerDependencies:
       stylelint: ^14.5.1 || ^15.0.0
     dependencies:
