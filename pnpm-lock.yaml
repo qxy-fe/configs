@@ -77,8 +77,8 @@ importers:
         specifier: ^6.1.1
         version: 6.1.1(eslint@8.40.0)
       eslint-plugin-unicorn:
-        specifier: ^47.0.0
-        version: 47.0.0(eslint@8.40.0)
+        specifier: ^46.0.1
+        version: 46.0.1(eslint@8.40.0)
       eslint-plugin-yml:
         specifier: ^1.6.0
         version: 1.6.0(eslint@8.40.0)
@@ -123,8 +123,8 @@ importers:
         specifier: ^6.1.1
         version: 6.1.1(eslint@8.40.0)
       eslint-plugin-unicorn:
-        specifier: ^47.0.0
-        version: 47.0.0(eslint@8.40.0)
+        specifier: ^46.0.1
+        version: 46.0.1(eslint@8.40.0)
       eslint-plugin-unused-imports:
         specifier: ^2.0.0
         version: 2.0.0(eslint@8.40.0)
@@ -1572,11 +1572,11 @@ packages:
       eslint: 8.40.0
     dev: false
 
-  /eslint-plugin-unicorn@47.0.0(eslint@8.40.0):
-    resolution: {integrity: sha512-ivB3bKk7fDIeWOUmmMm9o3Ax9zbMz1Bsza/R2qm46ufw4T6VBFBaJIR1uN3pCKSmSXm8/9Nri8V+iUut1NhQGA==}
-    engines: {node: '>=16'}
+  /eslint-plugin-unicorn@46.0.1(eslint@8.40.0):
+    resolution: {integrity: sha512-setGhMTiLAddg1asdwjZ3hekIN5zLznNa5zll7pBPwFOka6greCKDQydfqy4fqyUhndi74wpDzClSQMEcmOaew==}
+    engines: {node: '>=14.18'}
     peerDependencies:
-      eslint: '>=8.38.0'
+      eslint: '>=8.28.0'
     dependencies:
       '@babel/helper-validator-identifier': 7.19.1
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.40.0)
@@ -1591,7 +1591,7 @@ packages:
       pluralize: 8.0.0
       read-pkg-up: 7.0.1
       regexp-tree: 0.1.24
-      regjsparser: 0.10.0
+      regjsparser: 0.9.1
       safe-regex: 2.1.1
       semver: 7.3.8
       strip-indent: 3.0.0
@@ -2993,8 +2993,8 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /regjsparser@0.10.0:
-    resolution: {integrity: sha512-qx+xQGZVsy55CH0a1hiVwHmqjLryfh7wQyF5HO07XJ9f7dQMY/gPQHhlyDkIzJKC+x2fUCpCcUODUUUFrm7SHA==}
+  /regjsparser@0.9.1:
+    resolution: {integrity: sha512-dQUtn90WanSNl+7mQKcXAgZxvUe7Z0SqXlgzv0za4LwiUhyzBC58yQO3liFoUgu8GiJVInAhJjkj1N0EtQ5nkQ==}
     hasBin: true
     dependencies:
       jsesc: 0.5.0
