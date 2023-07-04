@@ -16,13 +16,13 @@ yarn add @qxy/eslint-config eslint typescript -D
 Install prettier and peers:
 
 ```bash
-yarn add  @qxy/prettier-config prettier -D
+yarn add @qxy/prettier-config prettier -D
 ```
 
 Install stylelint and peers:
 
 ```bash
-yarn add  @qxy/stylelint-config @qxy/prettier-config postcss stylelint prettier -D
+yarn add @qxy/stylelint-config @qxy/prettier-config postcss stylelint prettier -D
 ```
 
 ## Config
