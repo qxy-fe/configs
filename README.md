@@ -5,6 +5,12 @@
 
 Opinionable & sharable linter configs.
 
+## 🚫 Caveat
+
+For now, node versions >=14.19.3 are still being tested.
+
+But for a better dev DX, please upgrade to Node >=16.14 ASAP.
+
 ## Install
 
 Install eslint and peers:
@@ -117,14 +123,6 @@ Configuration in `.vscode/settings.json`
   }
 }
 ```
-
-## Support
-
-For now, node versions >=14.19.3 are still being tested.
-
-It will end at [30 Apr 2023](https://endoflife.date/nodejs).
-
-Please upgrade to Node >=16.14 as soon as possible.
 
 ## License
 
