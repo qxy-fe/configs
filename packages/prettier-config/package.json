@@ -1,9 +1,11 @@
 {
   "name": "@qxy/prettier-config",
+  "type": "module",
   "version": "1.6.0",
   "description": "",
   "keywords": [],
   "license": "MIT",
+  "exports": "./index.js",
   "main": "index.js",
   "files": [
     "index.js"
