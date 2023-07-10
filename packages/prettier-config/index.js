@@ -3,6 +3,10 @@
  * @see https://prettier.io/docs/en/options.html
  */
 
+export function defineConfig(config) {
+  return config
+}
+
 /**
  * @type {import('prettier').Config}
  */

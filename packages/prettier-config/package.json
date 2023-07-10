@@ -5,8 +5,15 @@
   "description": "",
   "keywords": [],
   "license": "MIT",
-  "exports": "./index.js",
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "default": "./index.js"
+    }
+  },
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "files": [
     "index.js"
   ],
