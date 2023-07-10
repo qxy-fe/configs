@@ -6,6 +6,8 @@ import type { Config } from 'prettier'
  * @param config Prettier config
  * @returns Prettier config
  */
-export function defineConfig(config: Config): Config
+declare function defineConfig(config: Config): Config
 
-export default Config
+declare const config: Config
+
+export { defineConfig, config, config as default }
