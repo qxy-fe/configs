@@ -11,6 +11,8 @@ For now, node versions >=14.19.3 are still being tested.
 
 But for a better dev DX, please upgrade to Node >=16.14 ASAP.
 
+For a better Node >= 16.14 support, checkout branch [next](https://github.com/qxy-fe/configs/tree/next).
+
 ## Install
 
 Install eslint and peers:
