@@ -5,30 +5,24 @@
 
 Opinionable & sharable linter configs.
 
-## 🚫 Caveat
-
-For now, node versions >=14.19.3 are still being tested.
-
-But for a better dev DX, please upgrade to Node >=16.14 ASAP.
-
 ## Install
 
 Install eslint and peers:
 
 ```bash
-yarn add @qxy/eslint-config eslint typescript -D
+yarn add @qxy/eslint-config@next eslint typescript -D
 ```
 
 Install prettier and peers:
 
 ```bash
-yarn add @qxy/prettier-config prettier -D
+yarn add @qxy/prettier-config@nex prettier -D
 ```
 
 Install stylelint and peers:
 
 ```bash
-yarn add @qxy/stylelint-config @qxy/prettier-config postcss stylelint prettier -D
+yarn add @qxy/stylelint-config@nex @qxy/prettier-config@nex postcss stylelint prettier -D
 ```
 
 ## Config

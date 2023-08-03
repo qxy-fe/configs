@@ -7,7 +7,7 @@
     "lint": "eslint .",
     "prepare": "husky install",
     "release": "run-s release:version release:publish",
-    "release:publish": "pnpm -r publish --access public",
+    "release:publish": "pnpm -r publish --access public --tag next",
     "release:version": "bumpp -r",
     "test": "vitest"
   },
