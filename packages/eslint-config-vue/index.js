@@ -34,7 +34,8 @@ module.exports = {
     'vue/no-undef-properties': 'off',
     'vue/require-default-prop': 'off',
     'vue/multi-word-component-names': 'off',
-    'vue/no-setup-props-destructure': 'off',
+    'vue/no-ref-object-reactivity-loss': 'off',
+    'vue/no-setup-props-reactivity-loss': 'off',
 
     'vue/require-prop-types': 'error',
     'vue/no-multiple-template-root': 'error',
