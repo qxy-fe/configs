@@ -2,6 +2,8 @@
  * @file ESLint basic config
  */
 
+const { isInEditor } = require('is-in-editor')
+
 module.exports = {
   env: {
     es6: true,
@@ -440,7 +442,7 @@ module.exports = {
     'n/no-callback-literal': 'off',
 
     // unused-imports
-    'unused-imports/no-unused-imports': 'error',
+    'unused-imports/no-unused-imports': isInEditor() ? 'off' : 'error',
     'unused-imports/no-unused-vars': [
       'error',
       {

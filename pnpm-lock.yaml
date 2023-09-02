@@ -86,6 +86,9 @@ importers:
       eslint-plugin-yml:
         specifier: ^1.8.0
         version: 1.8.0(eslint@8.48.0)
+      is-in-editor:
+        specifier: ^0.0.1
+        version: 0.0.1
       jsonc-eslint-parser:
         specifier: ^2.3.0
         version: 2.3.0
@@ -135,6 +138,9 @@ importers:
       eslint-plugin-yml:
         specifier: ^1.8.0
         version: 1.8.0(eslint@8.48.0)
+      is-in-editor:
+        specifier: ^0.0.1
+        version: 0.0.1
       jsonc-eslint-parser:
         specifier: ^2.3.0
         version: 2.3.0
@@ -2329,6 +2335,13 @@ packages:
     resolution: {integrity: sha512-gyPJuv83bHMpocVYoqof5VDiZveEoGoFL8m3BXNb2VW8Xs+rz9kqO8LOQ5DH6EsuvilT1ApazU0pyl+ytbPtlw==}
     dev: false
 
+  /is-in-editor@0.0.1:
+    resolution: {integrity: sha512-Xov5Z4rwF9JMsvOn6e1khwWcp8cMEjmwIUHXOHpARpNNuhphK6TbYCksyX/YMLLGugFwZ8F84pHmO2lLChLSeg==}
+    engines: {node: '>=16.14.0'}
+    dependencies:
+      std-env: 3.4.3
+    dev: false
+
   /is-negative-zero@2.0.2:
     resolution: {integrity: sha512-dqJvarLawXsFbNDeJW7zAz8ItJ9cd28YufuuFzh0G8pNHjJMnY08Dv7sYX2uF5UpQOwieAeOExEYAWWfu7ZZUA==}
     engines: {node: '>= 0.4'}
@@ -3363,6 +3376,10 @@ packages:
   /std-env@3.3.3:
     resolution: {integrity: sha512-Rz6yejtVyWnVjC1RFvNmYL10kgjC49EOghxWn0RFqlCHGFpQx+Xe7yW3I4ceK1SGrWIGMjD5Kbue8W/udkbMJg==}
     dev: true
+
+  /std-env@3.4.3:
+    resolution: {integrity: sha512-f9aPhy8fYBuMN+sNfakZV18U39PbalgjXG3lLB9WkaYTxijru61wb57V9wxxNthXM5Sd88ETBWi29qLAsHO52Q==}
+    dev: false
 
   /string-argv@0.3.2:
     resolution: {integrity: sha512-aqD2Q0144Z+/RqG52NeHEkZauTAUWJO8c6yTftGJKO3Tja5tUgIfmIl6kExvhtxSDP7fXB6DvzkfMpCd/F3G+Q==}
