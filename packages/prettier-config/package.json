@@ -1,20 +1,10 @@
 {
   "name": "@qxy/prettier-config",
-  "type": "module",
   "version": "1.7.0",
   "description": "",
   "keywords": [],
   "license": "MIT",
-  "exports": {
-    ".": {
-      "types": "./index.d.ts",
-      "import": "./index.js",
-      "default": "./index.js"
-    }
-  },
   "main": "./index.js",
-  "module": "./index.js",
-  "types": "./index.d.ts",
   "files": [
     "index.js"
   ],
