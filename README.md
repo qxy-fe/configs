@@ -7,30 +7,30 @@ Opinionable & sharable linter configs.
 
 ## 🚫 Caveat
 
-For now, node versions >=14.19.3 are still being tested.
+This branch is for node versions < 16 support and is in maintaining mode.
 
-But for a better dev DX, please upgrade to Node >=16.14 ASAP.
+But for a better dev DX, please upgrade to node v16 ASAP.
 
-For a better Node >= 16.14 support, checkout branch [next](https://github.com/qxy-fe/configs/tree/next).
+For a better node v16 support, checkout branch [main](https://github.com/qxy-fe/configs).
 
 ## Install
 
 Install eslint and peers:
 
 ```bash
-yarn add @qxy/eslint-config eslint typescript -D
+yarn add @qxy/eslint-config@1 eslint typescript -D
 ```
 
 Install prettier and peers:
 
 ```bash
-yarn add @qxy/prettier-config prettier -D
+yarn add @qxy/prettier-config@1 prettier -D
 ```
 
 Install stylelint and peers:
 
 ```bash
-yarn add @qxy/stylelint-config @qxy/prettier-config postcss stylelint prettier -D
+yarn add @qxy/stylelint-config@1 @qxy/prettier-config@1 postcss stylelint prettier -D
 ```
 
 ## Config
