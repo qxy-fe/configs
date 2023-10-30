@@ -88,11 +88,15 @@ module.exports = {
     'scss/at-if-closing-brace-newline-after': 'always-last-in-chain',
 
     /**
-     * @-import
+     * @-load
      */
 
-    // Disallow leading underscore in partial names in `@import`
-    'scss/at-import-no-partial-leading-underscore': true,
+    // Disallow leading underscore in partial names in @import, @use, @forward, and meta.load-css $url parameter.
+    'scss/load-no-partial-leading-underscore': true,
+
+    /**
+     * @-import
+     */
 
     /**
      * @-mixin
