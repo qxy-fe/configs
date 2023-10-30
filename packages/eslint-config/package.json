@@ -10,11 +10,11 @@
   ],
   "dependencies": {
     "@qxy/eslint-config-vue": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^6.7.5",
-    "@typescript-eslint/parser": "^6.7.5",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-html": "^7.1.0",
-    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-jsonc": "^2.10.0",
     "eslint-plugin-markdown": "^3.0.1",
     "eslint-plugin-n": "^16.2.0",
@@ -22,7 +22,7 @@
     "eslint-plugin-unicorn": "^49.0.0",
     "eslint-plugin-yml": "^1.10.0",
     "is-in-editor": "^0.0.1",
-    "jsonc-eslint-parser": "^2.3.0",
+    "jsonc-eslint-parser": "^2.4.0",
     "yaml-eslint-parser": "^1.2.2"
   },
   "publishConfig": {
@@ -36,7 +36,7 @@
     }
   ],
   "devDependencies": {
-    "eslint": "^8.51.0",
+    "eslint": "^8.52.0",
     "typescript": "^5.2.2"
   }
 }
