@@ -92,7 +92,7 @@ module.exports = {
      */
 
     // Disallow leading underscore in partial names in `@import`
-    'scss/at-import-no-partial-leading-underscore': true,
+    'scss/load-no-partial-leading-underscore': true,
 
     /**
      * @-mixin
