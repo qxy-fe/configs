@@ -1,9 +1,12 @@
 /**
- * Stylelint config for CSS
+ * @file stylelint-config-css
  * @see https://github.com/stylelint/stylelint-config-standard
  */
 
-module.exports = {
+/**
+ * @type {import('stylelint').Config}
+ */
+const config = {
   extends: ['stylelint-config-standard'],
 
   // Globs to ignore specific files
@@ -76,3 +79,5 @@ module.exports = {
     ],
   },
 }
+
+module.exports = config

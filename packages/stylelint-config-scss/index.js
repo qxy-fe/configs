@@ -1,11 +1,15 @@
 /**
+ * @file stylelint-config-scss
  * @see https://github.com/stylelint-scss/stylelint-config-recommended-scss
  * @see https://github.com/stylelint-scss/stylelint-config-standard-scss
  */
 
 const css = require('@qxy/stylelint-config-css')
 
-module.exports = {
+/**
+ * @type {import('stylelint').Config}
+ */
+const config = {
   extends: ['@qxy/stylelint-config-css'],
 
   ignoreFiles: css.ignoreFiles,
@@ -239,3 +243,5 @@ module.exports = {
     'scss/no-global-function-names': true,
   },
 }
+
+module.exports = config

@@ -1,4 +1,11 @@
-module.exports = {
+/**
+ * @file stylelint-config-vue
+ */
+
+/**
+ * @type {import('stylelint').Config}
+ */
+const config = {
   rules: {},
 
   overrides: [
@@ -27,3 +34,5 @@ module.exports = {
     },
   ],
 }
+
+module.exports = config

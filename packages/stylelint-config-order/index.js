@@ -1,11 +1,8 @@
 /**
- * Stylelint config with order
- *
+ * @file stylelint-config-order
  * @see https://github.com/hudochenkov/stylelint-order
  * @see https://github.com/stormwarning/stylelint-config-recess-order
  */
-
-'use strict'
 
 function trbl(prefix) {
   prefix = prefix ? `${prefix}-` : ''
@@ -427,7 +424,10 @@ const atRules = [
   },
 ]
 
-module.exports = {
+/**
+ * @type {import('stylelint').Config}
+ */
+const config = {
   plugins: ['stylelint-order'],
 
   rules: {
@@ -468,3 +468,5 @@ module.exports = {
     ],
   },
 }
+
+module.exports = config

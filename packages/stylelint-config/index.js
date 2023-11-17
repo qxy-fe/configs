@@ -1,8 +1,11 @@
 /**
- * @file All in one stylelint config
+ * @file stylelint-config
  */
 
-module.exports = {
+/**
+ * @type {import('stylelint').Config}
+ */
+const config = {
   extends: [
     '@qxy/stylelint-config-scss',
     '@qxy/stylelint-config-vue',
@@ -10,3 +13,5 @@ module.exports = {
     '@qxy/stylelint-config-prettier',
   ],
 }
+
+module.exports = config

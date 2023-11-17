@@ -1,12 +1,12 @@
 /**
- * Stylelint config with prettier
- *
+ *  @file stylelint-config-prettier
  * @see https://github.com/prettier/stylelint-prettier
  */
 
-'use strict'
-
-module.exports = {
+/**
+ * @type {import('stylelint').Config}
+ */
+const config = {
   plugins: ['stylelint-prettier'],
   rules: {
     // use prettier along with stylelint
@@ -29,3 +29,5 @@ module.exports = {
     'scss/operator-no-unspaced': null,
   },
 }
+
+module.exports = config
