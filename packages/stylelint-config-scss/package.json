@@ -11,7 +11,7 @@
   "dependencies": {
     "@qxy/stylelint-config-css": "workspace:*",
     "postcss-scss": "^4.0.9",
-    "stylelint-scss": "^5.3.1"
+    "stylelint-scss": "^5.3.2"
   },
   "publishConfig": {
     "access": "public"
@@ -24,7 +24,7 @@
     }
   ],
   "devDependencies": {
-    "postcss": "^8.4.31",
+    "postcss": "^8.4.32",
     "stylelint": "^15.11.0"
   }
 }

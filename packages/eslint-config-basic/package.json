@@ -15,7 +15,7 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-jsonc": "^2.10.0",
     "eslint-plugin-markdown": "^3.0.1",
-    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-n": "^16.4.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-unicorn": "^49.0.0",
     "eslint-plugin-unused-imports": "^3.0.0",
@@ -35,6 +35,6 @@
     }
   ],
   "devDependencies": {
-    "eslint": "^8.54.0"
+    "eslint": "^8.55.0"
   }
 }
