@@ -1,7 +1,7 @@
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.eslint.fixAll": true
+    "source.eslint.fixAll": "always"
   },
   "eslint.validate": [
     "yml",

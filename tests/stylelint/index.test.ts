@@ -36,7 +36,7 @@ describe('invalid css', () => {
           "line": 1,
           "rule": "selector-type-no-unknown",
           "severity": "error",
-          "text": "Unexpected unknown type selector \\"foobar\\" (selector-type-no-unknown)",
+          "text": "Unexpected unknown type selector "foobar" (selector-type-no-unknown)",
         },
       ]
     `)
