@@ -1,6 +1,6 @@
 {
   "name": "@qxy/configs",
-  "version": "2.0.0-beta.4",
+  "version": "2.0.0-beta.5",
   "private": true,
   "packageManager": "pnpm@8.12.0",
   "scripts": {
