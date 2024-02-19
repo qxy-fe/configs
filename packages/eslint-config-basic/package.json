@@ -18,7 +18,7 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-unicorn": "^50.0.1",
-    "eslint-plugin-unused-imports": "^3.0.0",
+    "eslint-plugin-unused-imports": "^3.1.0",
     "eslint-plugin-yml": "^1.12.2",
     "is-in-editor": "^0.0.1",
     "jsonc-eslint-parser": "^2.4.0",
