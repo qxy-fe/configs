@@ -5,7 +5,7 @@
   "packageManager": "pnpm@8.15.4",
   "scripts": {
     "lint": "eslint .",
-    "prepare": "husky install",
+    "prepare": "husky",
     "release": "run-s release:version release:publish",
     "release:publish": "pnpm -r publish --access public --tag next",
     "release:version": "bumpp -r",

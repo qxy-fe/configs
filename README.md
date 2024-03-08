@@ -110,7 +110,7 @@ Configuration in `.vscode/settings.json`
     "typescriptreact"
   ],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "always"
   },
   "[javascript][typescript][vue]": {
     "editor.formatOnSave": false
