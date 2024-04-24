@@ -387,7 +387,6 @@ module.exports = {
     'unicorn/explicit-length-check': 'error',
     'unicorn/new-for-builtins': 'error',
     'unicorn/no-console-spaces': 'error',
-    'unicorn/no-for-loop': 'error',
     'unicorn/no-hex-escape': 'error',
     'unicorn/no-lonely-if': 'error',
     'unicorn/prefer-keyboard-event-key': 'error',
