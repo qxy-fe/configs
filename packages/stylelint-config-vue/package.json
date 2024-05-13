@@ -9,7 +9,7 @@
     "index.js"
   ],
   "dependencies": {
-    "postcss-html": "^1.6.0"
+    "postcss-html": "^1.7.0"
   },
   "publishConfig": {
     "access": "public"
