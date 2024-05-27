@@ -2,7 +2,7 @@
   "name": "@qxy/configs",
   "version": "2.0.0-beta.10",
   "private": true,
-  "packageManager": "pnpm@9.1.1",
+  "packageManager": "pnpm@9.1.2",
   "scripts": {
     "lint": "eslint .",
     "prepare": "husky",
@@ -21,9 +21,9 @@
     "husky": "^9.0.11",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^6.2.0",
-    "pnpm": "^9.1.1",
+    "pnpm": "^9.1.2",
     "prettier": "^3.2.5",
-    "stylelint": "^16.5.0",
+    "stylelint": "^16.6.0",
     "vitest": "^1.6.0"
   },
   "prettier": "@qxy/prettier-config",
