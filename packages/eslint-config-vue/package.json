@@ -11,7 +11,7 @@
   "dependencies": {
     "@qxy/eslint-config-typescript": "workspace:*",
     "eslint-plugin-vue": "^9.26.0",
-    "vue-eslint-parser": "^9.4.2"
+    "vue-eslint-parser": "^9.4.3"
   },
   "publishConfig": {
     "access": "public"
