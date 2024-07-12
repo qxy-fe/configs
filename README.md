@@ -5,6 +5,13 @@
 
 Opinionable & sharable linter configs.
 
+---
+
+> [!CAUTION]
+> This repository is archived. Please use other shareable linter rules ASAP.
+
+---
+
 ## Install
 
 Install eslint and peers:
